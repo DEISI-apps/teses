@@ -1,0 +1,56 @@
+{% extends 'teses/layout.html' %}
+
+{% block style %}
+
+label, .etiqueta {
+    font-weight: bold;
+}
+.botoes {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+{% endblock style %}
+
+
+{% block main %}
+
+
+    <h3>
+        <b>
+        {{ tese.titulo }}
+        </b>
+    </h3>
+    autor: <b>{{ tese.alunos }}</b>, orientador: <b>{% for orientador in tese.orientadores.all %}{{ orientador }}{% endfor %}</b>
+    {%  if tese.entidade_externa != '' and  tese.entidade_externa != None and tese.entidade_externa != "N/A"  %}Em parceria com <b>{{tese.entidade_externa}}</b> {% endif %}
+    <br>
+    <i>
+       {% for curso in tese.cursos.all %}{{ curso }}{% endfor %}, ano lectivo 20{{ tese.ano }}, <a href="" download>Descarregar Relatório</a><br>
+    </i>
+    <hr>
+
+    <p><span class="etiqueta">Resumo: </span>{{ tese.resumo|linebreaksbr }}</p>
+
+    <span class="etiqueta">Area:</span>
+    {% for area in tese.areas.all %}{{ area }}{% if not forloop.last %};{% else %}.{% endif %}{% endfor %}
+    <br>
+
+    <span class="etiqueta">Tecnologias usadas:</span>
+    {% for tec in tese.tecnologias.all %}{{ tec }}{% if not forloop.last %};{% else %}.{% endif %}{% endfor %}
+    <br>
+
+    <br>
+    {% if tese.imagem %}
+    <br><b>Imagem:</b> <br>
+    <img src="{{ tese.imagem.url }}" width="50%">
+    {% endif %}
+
+    <br>
+    {% if tese.video %}
+    <br><b>Video:</b> <br>
+    <a href="{{ tese.video }}">video demonstrativo</a>
+    {% endif %}
+
+{% endblock main %}

@@ -1,0 +1,56 @@
+
+{% extends 'teses/layout.html' %}
+
+{% block style %}
+
+.black {
+    color: grey;
+}
+
+main div {
+
+    padding: 10px;
+    margin: 5px 0;
+    background: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    background: white;
+    cursor: pointer;
+    text-decoration: none; /* Add the underline on hover */
+    color: grey; /* Change the text color on hover */
+}
+
+a:hover{
+    color: black;
+    text-decoration: underline; /* Add the underline on hover */
+}
+
+{% endblock style %}
+
+
+
+{% block main %}
+
+{% for tese in teses %}
+    <a href="{% url 'edita' tese.id %}">
+        <div>
+            <h4>
+        <b>
+        {{ tese.titulo }}
+        </b>
+    </h4>
+    <span class="black">
+        autor: <b>{{ tese.alunos }}</b>, orientador: <b>{% for orientador in tese.orientadores.all %}{{ orientador }}{% endfor %}</b>
+        {% if tese.entidade_externa != '' and  tese.entidade_externa != None and tese.entidade_externa != "N/A" %}<br>Em parceria com <b>{{tese.entidade_externa}}</b> {% endif %}
+        <br>
+        <i>
+           {% for curso in tese.cursos.all %}{{ curso }}{% endfor %}, ano lectivo 20{{ tese.ano }}<br>
+        </i>
+    </span>
+        </div>
+    </a>
+{% endfor %}
+
+{% endblock main %}

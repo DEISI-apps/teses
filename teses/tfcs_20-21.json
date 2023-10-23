@@ -1,0 +1,545 @@
+[
+    {
+        "tfc": "DEISI135",
+        "Titulo": "App4SHM - Aplica\u00e7\u00e3o m\u00f3vel para an\u00e1lise estrutural",
+        "orientador": "Pedro Alves",
+        "entidade": "Departamento de Engenharia Civil da Universidade Lus\u00f3fona",
+        "alunos": [
+            "Nuno Penim",
+            "Paulo Oliveira"
+        ],
+        "intercalar": "16.80",
+        "final": "16.50",
+        "avalia\u00e7\u00e3o": "17",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_DEISI135.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI136",
+        "Titulo": "Vacqa Mobile - Aux\u00edlio ao diagn\u00f3stico de medicina veterin\u00e1ria",
+        "orientador": "Pedro Alves",
+        "entidade": "Departamento de Medicina Veterin\u00e1ria",
+        "alunos": [
+            "Marco Estevens",
+            "Jo\u00e3o Regateiro"
+        ],
+        "intercalar": "17.50",
+        "final": "17.43",
+        "avalia\u00e7\u00e3o": "17",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_DEISI136.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI137",
+        "Titulo": "Plataforma de inqu\u00e9ritos aos alunos",
+        "orientador": "Pedro Alves",
+        "entidade": "N/A",
+        "alunos": [
+            "Marcella Melo"
+        ],
+        "intercalar": "17.63",
+        "final": "18.50",
+        "avalia\u00e7\u00e3o": "18",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_DEISI137.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI138",
+        "Titulo": "Gest\u00e3o de centros de investiga\u00e7\u00e3o",
+        "orientador": "Pedro Alves",
+        "entidade": "Centro de Estudos Interdisciplinares em Educa\u00e7\u00e3o e Desenvolvimento",
+        "alunos": [
+            "David Silva",
+            "Tiago Louren\u00e7o"
+        ],
+        "intercalar": "17.23",
+        "final": "16.57",
+        "avalia\u00e7\u00e3o": "17",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_21_DEISI138.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI139",
+        "Titulo": "Home Surveilance Kit baseado em Raspberry Pi",
+        "orientador": "Lu\u00eds Gomes",
+        "entidade": "N/A",
+        "alunos": [
+            "Pedro Nogueira",
+            "Ricardo Cunha"
+        ],
+        "intercalar": "13.60",
+        "final": "14.83",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_21_DEISI139.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "Aluno142",
+        "Titulo": "Plataforma de gest\u00e3o de eventos v2",
+        "orientador": "Bruno Cipriano",
+        "entidade": "",
+        "alunos": [
+            "Bruno Silva"
+        ],
+        "intercalar": "16.20",
+        "final": "16.00",
+        "avalia\u00e7\u00e3o": "16",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_21_Aluno142.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI143",
+        "Titulo": "Aplica\u00e7\u00e3o de an\u00e1lise e prioriza\u00e7\u00e3o de requisitos",
+        "orientador": "Ac\u00e1cio Carmona",
+        "entidade": "N/A",
+        "alunos": [
+            "R\u00faben Tomazio"
+        ],
+        "intercalar": "10.93",
+        "final": "14.40",
+        "avalia\u00e7\u00e3o": "14",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_21_DEISI143.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "Aluno146",
+        "Titulo": "Aplica\u00e7\u00e3o m\u00f3vel para membros de plataforma de gest\u00e3o de eventos",
+        "orientador": "Rodrigo Correia",
+        "entidade": "",
+        "alunos": [
+            "Catarina Moita"
+        ],
+        "intercalar": "17.63",
+        "final": "18.20",
+        "avalia\u00e7\u00e3o": "18",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_Aluno146.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI149",
+        "Titulo": "Traveller's community",
+        "orientador": "Rui Santos",
+        "entidade": "N/A",
+        "alunos": [
+            "Vera Tavares",
+            "Tiago Guerra"
+        ],
+        "intercalar": "16.33",
+        "final": "18.27",
+        "avalia\u00e7\u00e3o": "18",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_DEISI149.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI152",
+        "Titulo": "Plataforma MentHA: gamification do treino cognitivo e avalia\u00e7\u00e3o neuropsicol\u00f3gica",
+        "orientador": "L\u00facio Studer",
+        "entidade": "Escola de Psicologia e Ci\u00eancias da Vida da Universidade Lus\u00f3fona (coorientador: Prof. Pedro Santos)",
+        "alunos": [
+            "Afonso Rodrigues"
+        ],
+        "intercalar": "17.80",
+        "final": "17.10",
+        "avalia\u00e7\u00e3o": "17",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_21_DEISI152.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI154",
+        "Titulo": "Aplica\u00e7\u00e3o para a monitoriza\u00e7\u00e3o e controlo de Drones",
+        "orientador": "Jo\u00e3o Carvalho",
+        "entidade": "N/A",
+        "alunos": [
+            "R\u00faben Cardoso"
+        ],
+        "intercalar": "16.63",
+        "final": "14.57",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_DEISI154.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI155",
+        "Titulo": "Aplica\u00e7\u00e3o para a monitoriza\u00e7\u00e3o de miss\u00f5es para Drones",
+        "orientador": "Jo\u00e3o Carvalho",
+        "entidade": "N/A",
+        "alunos": [
+            "Rodrigo Figueiredo"
+        ],
+        "intercalar": "15.97",
+        "final": "13.77",
+        "avalia\u00e7\u00e3o": "14",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_DEISI155.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI160",
+        "Titulo": "Buddy abroad",
+        "orientador": "Rui Ribeiro",
+        "entidade": "projeto incubadora PLAY",
+        "alunos": [
+            "Afonso Costa",
+            "Tom\u00e1s Cruz"
+        ],
+        "intercalar": "17.43",
+        "final": "18.60",
+        "avalia\u00e7\u00e3o": "18",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_DEISI160.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI161",
+        "Titulo": "Plataforma de Informa\u00e7\u00e3o Geogr\u00e1fica para a CM Lisboa",
+        "orientador": "Rui Ribeiro",
+        "entidade": "Departamento de Pol\u00edtica da ULHT e CM Lisboa",
+        "alunos": [
+            "Martim Mour\u00e3o",
+            "Gon\u00e7alo \u00c9vora"
+        ],
+        "intercalar": "17.57",
+        "final": "16.47",
+        "avalia\u00e7\u00e3o": "17",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_DEISI161.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI163",
+        "Titulo": "Portal Empresarial de Conte\u00fados e CRM Integrado",
+        "orientador": "Rui Ribeiro",
+        "entidade": "Road2Biz",
+        "alunos": [
+            "Allyson Rodrigues"
+        ],
+        "intercalar": "15.93",
+        "final": "14.67",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_21_DEISI163.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI167",
+        "Titulo": "Conte\u00fados de aprendizagem colaborativos",
+        "orientador": "Fernando Teod\u00f3sio",
+        "entidade": "N/A",
+        "alunos": [
+            "Gon\u00e7alo Coutinho",
+            "Andr\u00e9 Gomes"
+        ],
+        "intercalar": "9.17",
+        "final": "10.13",
+        "avalia\u00e7\u00e3o": "10",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_21_DEISI167.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "Aluno168",
+        "Titulo": "Ubiquous Quiz Builder",
+        "orientador": "Miguel Tavares",
+        "entidade": "",
+        "alunos": [
+            "Diogo Novo"
+        ],
+        "intercalar": "15.70",
+        "final": "18.70",
+        "avalia\u00e7\u00e3o": "18",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_21_Aluno168.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "G169",
+        "Titulo": "Plataforma de emprego para rec\u00e9m graduados sem experi\u00eancia profissional",
+        "orientador": "Rui Santos",
+        "entidade": "",
+        "alunos": [
+            "Miguel Pereira",
+            "Gon\u00e7alo Monteiro"
+        ],
+        "intercalar": "16.43",
+        "final": "18.87",
+        "avalia\u00e7\u00e3o": "18",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_G169.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI170",
+        "Titulo": "Classificador de g\u00e9neros musicais",
+        "orientador": "Fernando Teod\u00f3sio",
+        "entidade": "N/A",
+        "alunos": [
+            "Eduardo Marques"
+        ],
+        "intercalar": "9.30",
+        "final": "11.33",
+        "avalia\u00e7\u00e3o": "11",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_21_DEISI170.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "Aluno171",
+        "Titulo": "BoxIt - Plataforma Geradora de Redes de Computadores Virtuais",
+        "orientador": "Miguel Tavares",
+        "entidade": "",
+        "alunos": [
+            "Bernardo Barardo"
+        ],
+        "intercalar": "14.97",
+        "final": "16.80",
+        "avalia\u00e7\u00e3o": "16",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_21_Aluno171.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI173",
+        "Titulo": "Sistema de gest\u00e3o de uma empresa de atividades n\u00e1uticas e alojamento",
+        "orientador": "Pedro Serra",
+        "entidade": "N/A",
+        "alunos": [
+            "Rui Prata",
+            "Jo\u00e3o Martins"
+        ],
+        "intercalar": "15.27",
+        "final": "13.90",
+        "avalia\u00e7\u00e3o": "14",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_DEISI173.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "Aluno174",
+        "Titulo": "The price is right",
+        "orientador": "Fernando Teod\u00f3sio",
+        "entidade": "",
+        "alunos": [
+            "Sara Diogo"
+        ],
+        "intercalar": "16.50",
+        "final": "18.20",
+        "avalia\u00e7\u00e3o": "18",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_Aluno174.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "G175",
+        "Titulo": "Aplica\u00e7\u00e3o M\u00f3vel para auxilio de donos de animais de estima\u00e7\u00e3o",
+        "orientador": "Rui Santos",
+        "entidade": "",
+        "alunos": [
+            "Elisa Morgado",
+            "Daniel Branco"
+        ],
+        "intercalar": "15.67",
+        "final": "18.30",
+        "avalia\u00e7\u00e3o": "18",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_G175.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI176",
+        "Titulo": "Aplica\u00e7\u00e3o para a controlo de mapas multispectrais (2D e 3D) a partir de Drones",
+        "orientador": "Jo\u00e3o Carvalho",
+        "entidade": "N/A",
+        "alunos": [
+            "Tiago Fontes"
+        ],
+        "intercalar": "15.23",
+        "final": "14.10",
+        "avalia\u00e7\u00e3o": "14",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_DEISI176.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI184",
+        "Titulo": "Telem\u00f3vel como instrumento musical em orquestra de computadores em rede",
+        "orientador": "L\u00facio Studer",
+        "entidade": "Departamento de Cinema e Arte dos Media, ECATI (coorientador: Prof. Jo\u00e3o Carrilho)",
+        "alunos": [
+            "Marina Martins",
+            "Guilherme Franco"
+        ],
+        "intercalar": "18.97",
+        "final": "18.00",
+        "avalia\u00e7\u00e3o": "18",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_DEISI184.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI185",
+        "Titulo": "Plataforma para gest\u00e3o de agrupamento musical",
+        "orientador": "L\u00facio Studer",
+        "entidade": "Quarteto Arabesco",
+        "alunos": [
+            "Gon\u00e7alo Matos",
+            "Andr\u00e9 Rego"
+        ],
+        "intercalar": "16.77",
+        "final": "14.47",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_21_DEISI185.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI189",
+        "Titulo": "Plugin Drop-Project v2",
+        "orientador": "Bruno Cipriano",
+        "entidade": "N/A",
+        "alunos": [
+            "Diogo Casaca"
+        ],
+        "intercalar": "16.03",
+        "final": "14.37",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_21_DEISI189.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "G191",
+        "Titulo": "DEISI ASK",
+        "orientador": "Rui Santos",
+        "entidade": "",
+        "alunos": [
+            "R\u00faben Guerra",
+            "Mariana Lamego"
+        ],
+        "intercalar": "16.83",
+        "final": "18.70",
+        "avalia\u00e7\u00e3o": "18",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_G191.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI198",
+        "Titulo": "Pandora - Yet Another Automated Assessment Tool",
+        "orientador": "Pedro Serra",
+        "entidade": "N/A",
+        "alunos": [
+            "Ricardo Nunes",
+            "Alexandre Brigolas"
+        ],
+        "intercalar": "17.67",
+        "final": "19.63",
+        "avalia\u00e7\u00e3o": "19",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_DEISI198.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI199",
+        "Titulo": "Android Walk Test App",
+        "orientador": "L\u00facio Studer",
+        "entidade": "Multivision (co-orientador: Eng. Nuno Valente)",
+        "alunos": [
+            "Pedro Canaveira"
+        ],
+        "intercalar": "17.13",
+        "final": "18.13",
+        "avalia\u00e7\u00e3o": "18",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_21_DEISI199.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI200",
+        "Titulo": "Plataforma de Gestao da Federa\u00e7\u00e3o de Andebol",
+        "orientador": "Rui Ribeiro",
+        "entidade": "Federa\u00e7\u00e3o Portuguesa de Andebol",
+        "alunos": [
+            "Pedro Cardoso"
+        ],
+        "intercalar": "15.60",
+        "final": "15.63",
+        "avalia\u00e7\u00e3o": "16",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_DEISI200.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI203",
+        "Titulo": "Data Science em Gastronomia Computacional",
+        "orientador": "Tiago Simas",
+        "entidade": "Copelabs (ULHT) e ISMAT",
+        "alunos": [
+            "Ricardo Melo"
+        ],
+        "intercalar": "15.83",
+        "final": "18.97",
+        "avalia\u00e7\u00e3o": "18",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_21_DEISI203.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    },
+    {
+        "tfc": "DEISI208",
+        "Titulo": "Chatbot inteligente para implementar sistema de recomenda\u00e7\u00f5es",
+        "orientador": "Manuel Marques Pita",
+        "entidade": "N/A",
+        "alunos": [
+            "Nayara Rodrigues"
+        ],
+        "intercalar": "17.33",
+        "final": "14.40",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_21_DEISI208.pdf",
+        "video": "N/A",
+        "ano": "20-21"
+    }
+]

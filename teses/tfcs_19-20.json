@@ -1,0 +1,558 @@
+[
+    {
+        "tfc": "DEISI75",
+        "Titulo": "Plataforma Gest\u00e3o de Requisitos",
+        "orientador": "Lu\u00eds Gomes",
+        "entidade": "N/A",
+        "alunos": [
+            "Clinton Afonso",
+            "Vanessa Costa"
+        ],
+        "intercalar": "10.67",
+        "final": "12.10",
+        "avalia\u00e7\u00e3o": "11.74",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_20_DEISI75.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI77",
+        "Titulo": "Plataforma de subscri\u00e7\u00e3o de servi\u00e7os",
+        "orientador": "Lu\u00eds Gomes",
+        "entidade": "N/A",
+        "alunos": [
+            "Guilherme Alves",
+            "In\u00eas Lopes"
+        ],
+        "intercalar": "11.57",
+        "final": "14.62",
+        "avalia\u00e7\u00e3o": "13.86",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_20_DEISI77.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "Aluno82",
+        "Titulo": "Plataforma de Apoio a Projetos de Multiplos Clientes",
+        "orientador": "Miguel Tavares",
+        "entidade": "",
+        "alunos": [
+            "Francisco Silva"
+        ],
+        "intercalar": "15.81",
+        "final": "16.79",
+        "avalia\u00e7\u00e3o": "16.55",
+        "epoca": "Entrega Final: \u00c9poca Recurso",
+        "relatorio": "TFC_20_Aluno82.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI83",
+        "Titulo": "Plataforma DEISI - Gest\u00e3o de TFCs (Desenvolvimento)",
+        "orientador": "Pedro Alves",
+        "entidade": "N/A",
+        "alunos": [
+            "Bruno Bacelar",
+            "Rodrigo Marcelino"
+        ],
+        "intercalar": "18.07",
+        "final": "17.24",
+        "avalia\u00e7\u00e3o": "17.45",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI83.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI84",
+        "Titulo": "Plataforma DEISI - Gest\u00e3o de TFCs (An\u00e1lise e Testes)",
+        "orientador": "Pedro Alves",
+        "entidade": "N/A",
+        "alunos": [
+            "Diogo C\u00e9sar",
+            "Rafael Horta"
+        ],
+        "intercalar": "17.21",
+        "final": "17.48",
+        "avalia\u00e7\u00e3o": "17.41",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI84.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI86",
+        "Titulo": "fechadura inteligente",
+        "orientador": "Lu\u00eds Gomes",
+        "entidade": "N/A",
+        "alunos": [
+            "Tiago Pereira",
+            "Gustavo Jorge"
+        ],
+        "intercalar": "15.95",
+        "final": "12.14",
+        "avalia\u00e7\u00e3o": "13.09",
+        "epoca": "Entrega Final: \u00c9poca Recurso",
+        "relatorio": "TFC_20_DEISI86.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "Aluno87",
+        "Titulo": "Digital Badges in Education",
+        "orientador": "Pedro Alves",
+        "entidade": "",
+        "alunos": [
+            "Bijel Premgi"
+        ],
+        "intercalar": "19.86",
+        "final": "18.52",
+        "avalia\u00e7\u00e3o": "18.86",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_Aluno87.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "Aluno88",
+        "Titulo": "Plugin DP para IntelliJ",
+        "orientador": "Bruno Cipriano",
+        "entidade": "",
+        "alunos": [
+            "Yash Jahit"
+        ],
+        "intercalar": "17.21",
+        "final": "16.38",
+        "avalia\u00e7\u00e3o": "16.59",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_Aluno88.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI89",
+        "Titulo": "Aplica\u00e7\u00e3o m\u00f3vel para acesso ao Open edX (cursos online)",
+        "orientador": "Pedro Alves",
+        "entidade": "N/A",
+        "alunos": [
+            "Tiago Pinto"
+        ],
+        "intercalar": "17.05",
+        "final": "14.71",
+        "avalia\u00e7\u00e3o": "15.30",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI89.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI90",
+        "Titulo": "Content Marketplace platform",
+        "orientador": "Rui Ribeiro",
+        "entidade": "startup da incubadora PLAY",
+        "alunos": [
+            "Bruna Vieites",
+            "Rafael Lemos"
+        ],
+        "intercalar": "15.62",
+        "final": "18.19",
+        "avalia\u00e7\u00e3o": "17.55",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI90.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI91",
+        "Titulo": "Buddy abroad",
+        "orientador": "Rui Ribeiro",
+        "entidade": "Buddy abroad - projeto da incubadora PLAY",
+        "alunos": [
+            "Diogo Azevedo",
+            "M\u00e1rio Oliveira"
+        ],
+        "intercalar": "12.24",
+        "final": "14.67",
+        "avalia\u00e7\u00e3o": "14.06",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI91.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI92",
+        "Titulo": "Portal Empresarial de Conte\u00fados e CRM Integrado",
+        "orientador": "Rui Ribeiro",
+        "entidade": "Road2Biz",
+        "alunos": [
+            "Jo\u00e3o Baleis\u00e3o"
+        ],
+        "intercalar": "6.05",
+        "final": "13.71",
+        "avalia\u00e7\u00e3o": "11.80",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_20_DEISI92.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI93",
+        "Titulo": "Plataforma de Gest\u00e3o de Identidades e Acessos",
+        "orientador": "Rui Ribeiro",
+        "entidade": "N/A",
+        "alunos": [
+            "Diogo Agostinho"
+        ],
+        "intercalar": "15.52",
+        "final": "15.48",
+        "avalia\u00e7\u00e3o": "15.49",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI93.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "Aluno94",
+        "Titulo": "Android Quiz Builder v2",
+        "orientador": "Bruno Cipriano",
+        "entidade": "",
+        "alunos": [
+            "Lu\u00eds Gon\u00e7alves"
+        ],
+        "intercalar": "14.00",
+        "final": "15.62",
+        "avalia\u00e7\u00e3o": "15.22",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_Aluno94.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI95",
+        "Titulo": "Sistema de gest\u00e3o de produtos com liga\u00e7\u00e3o ao InvoiceExpress",
+        "orientador": "Pedro Serra",
+        "entidade": "N/A",
+        "alunos": [
+            "Rodrigo Cassanheira"
+        ],
+        "intercalar": "17.29",
+        "final": "12.71",
+        "avalia\u00e7\u00e3o": "13.86",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI95.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI96",
+        "Titulo": "Expans\u00e3o de uma plataforma de automatic assessment tool (AAT)",
+        "orientador": "Pedro Serra",
+        "entidade": "N/A",
+        "alunos": [
+            "Bruno Leal"
+        ],
+        "intercalar": "18.79",
+        "final": "16.71",
+        "avalia\u00e7\u00e3o": "17.23",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI96.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI97",
+        "Titulo": "Sistema de gest\u00e3o de uma escola de actividades nauticas",
+        "orientador": "Pedro Serra",
+        "entidade": "WakeVilla Wakeboard School",
+        "alunos": [
+            "Duarte Olival"
+        ],
+        "intercalar": "17.71",
+        "final": "15.95",
+        "avalia\u00e7\u00e3o": "16.39",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI97.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI99",
+        "Titulo": "Redes de neg\u00f3cios de colabora\u00e7\u00e3o e marketing que motivam com incentivos e pr\u00e9mios",
+        "orientador": "Fernando Teod\u00f3sio",
+        "entidade": "CMM/ Media/ GAGICRC Media/ Culturface",
+        "alunos": [
+            "Jolina G\u00favulo"
+        ],
+        "intercalar": "14.57",
+        "final": "14.71",
+        "avalia\u00e7\u00e3o": "14.68",
+        "epoca": "Entrega Final: \u00c9poca Recurso",
+        "relatorio": "TFC_20_DEISI99.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI100",
+        "Titulo": "Gest\u00e3o de neg\u00f3cios internacionais",
+        "orientador": "Fernando Teod\u00f3sio",
+        "entidade": "EMP/ GAGICRC/ CE CPLP",
+        "alunos": [
+            "Ricardo Ferreira"
+        ],
+        "intercalar": "16.81",
+        "final": "17.29",
+        "avalia\u00e7\u00e3o": "17.17",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI100.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI101",
+        "Titulo": "Framework para Rede Colaborativa de Organiza\u00e7\u00f5es",
+        "orientador": "Fernando Teod\u00f3sio",
+        "entidade": "OFI/ REC/ SC/ GAGICRC",
+        "alunos": [
+            "Francisco Correia"
+        ],
+        "intercalar": "12.71",
+        "final": "10.38",
+        "avalia\u00e7\u00e3o": "10.96",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI101.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI102",
+        "Titulo": "Agregador multitem\u00e1tico",
+        "orientador": "Fernando Teod\u00f3sio",
+        "entidade": "Media/ GAGICRC/ Culturface",
+        "alunos": [
+            "Rafael Reto",
+            "Jo\u00e3o Cardoso"
+        ],
+        "intercalar": "13.67",
+        "final": "11.95",
+        "avalia\u00e7\u00e3o": "12.38",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI102.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "G104",
+        "Titulo": "Aplic\u00e3o para Gest\u00e3o\u00a0do Clube de Corrida e Caminhada",
+        "orientador": "Rodrigo Correia",
+        "entidade": "",
+        "alunos": [
+            "Lucas Silva"
+        ],
+        "intercalar": "16.43",
+        "final": "16.18",
+        "avalia\u00e7\u00e3o": "16.24",
+        "epoca": "Entrega Final: \u00c9poca Recurso",
+        "relatorio": "TFC_20_G104.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "NDEISI106",
+        "Titulo": "Sistema de autentica\u00e7\u00e3o para a Bateria Sist\u00e9mica de Lisboa",
+        "orientador": "Jos\u00e9 Faisca",
+        "entidade": "Escola de Psicologia e Ci\u00eancias da Vida",
+        "alunos": [
+            "Andr\u00e9 Santos",
+            "Guilherme Borges"
+        ],
+        "intercalar": "15.41",
+        "final": "14.33",
+        "avalia\u00e7\u00e3o": "14.60",
+        "epoca": "Entrega Final: \u00c9poca Recurso",
+        "relatorio": "TFC_20_NDEISI106.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI111",
+        "Titulo": "An\u00e1lise autom\u00e1tica de conversas em redes sociais.",
+        "orientador": "Manuel Marques Pita",
+        "entidade": "N/A",
+        "alunos": [
+            "Afonso Marques"
+        ],
+        "intercalar": "18.62",
+        "final": "19.29",
+        "avalia\u00e7\u00e3o": "19.12",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI111.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "G112",
+        "Titulo": "Plataforma de resumos - De estudantes para estudantes",
+        "orientador": "Rui Santos",
+        "entidade": "",
+        "alunos": [
+            "Jo\u00e3o Alves"
+        ],
+        "intercalar": "13.00",
+        "final": "15.76",
+        "avalia\u00e7\u00e3o": "15.07",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_G112.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "Empresa114",
+        "Titulo": "Robot-Parte 2: Interac\u00e7\u00e3o e Comunica\u00e7\u00e3o",
+        "orientador": "S\u00e9rgio Ferreira",
+        "entidade": "Intelligent Algorithms",
+        "alunos": [
+            "Diana Jesus",
+            "Filipe Silva"
+        ],
+        "intercalar": "13.71",
+        "final": "14.05",
+        "avalia\u00e7\u00e3o": "13.97",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_20_Empresa114.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "Empresa117",
+        "Titulo": "Desenvolvimento de v\u00e1rias aplica\u00e7\u00f5es solicitadas pelas \u00e1reas de neg\u00f3cio",
+        "orientador": "Ac\u00e1cio Carmona",
+        "entidade": "Infraestruturas de Portugal",
+        "alunos": [
+            "Rui Sousa"
+        ],
+        "intercalar": "17.43",
+        "final": "17.86",
+        "avalia\u00e7\u00e3o": "17.75",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_Empresa117.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "G119",
+        "Titulo": "Aplica\u00e7\u00e3o para Gest\u00e3o e Planeamento T\u00e9cnicos no Terreno",
+        "orientador": "Pedro Serra",
+        "entidade": "",
+        "alunos": [
+            "Jos\u00e9 Vasconcelos",
+            "Pedro Robalo"
+        ],
+        "intercalar": "15.64",
+        "final": "15.67",
+        "avalia\u00e7\u00e3o": "15.66",
+        "epoca": "Entrega Final: \u00c9poca Recurso",
+        "relatorio": "TFC_20_G119.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "G120",
+        "Titulo": "Matchmaking de Oferta e Procura de servi\u00e7os",
+        "orientador": "Rui Santos",
+        "entidade": "",
+        "alunos": [
+            "Lu\u00eds Caldeira",
+            "Marta Gomes"
+        ],
+        "intercalar": "15.19",
+        "final": "17.19",
+        "avalia\u00e7\u00e3o": "16.69",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_G120.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "G121",
+        "Titulo": "Optimiza\u00e7\u00e3o de atribui\u00e7\u00e3o de equipas para maximizar a capacidade de resposta",
+        "orientador": "Lu\u00eds Gomes",
+        "entidade": "",
+        "alunos": [
+            "Henrique Silvestre",
+            "Norberto Rocha"
+        ],
+        "intercalar": "11.48",
+        "final": "16.24",
+        "avalia\u00e7\u00e3o": "15.05",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_G121.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI122",
+        "Titulo": "Aplica\u00e7\u00e3o de gest\u00e3o de condom\u00ednio usando Python e Django",
+        "orientador": "Jos\u00e9 Aser Lourenzo",
+        "entidade": "N/A",
+        "alunos": [
+            "Astley Santos"
+        ],
+        "intercalar": "12.95",
+        "final": "14.24",
+        "avalia\u00e7\u00e3o": "13.92",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_20_DEISI122.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI123",
+        "Titulo": "Aplica\u00e7\u00e3o de gest\u00e3o de condom\u00ednio usando PHP",
+        "orientador": "Jos\u00e9 Aser Lourenzo",
+        "entidade": "N/A",
+        "alunos": [
+            "Diogo Ribeiro"
+        ],
+        "intercalar": "14.95",
+        "final": "14.25",
+        "avalia\u00e7\u00e3o": "14.43",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_20_DEISI123.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI124",
+        "Titulo": "Aplica\u00e7\u00e3o WEB para gest\u00e3o de invent\u00e1rio de assets inform\u00e1ticos",
+        "orientador": "Jos\u00e9 Aser Lourenzo",
+        "entidade": "N/A",
+        "alunos": [
+            "Tiago Guedes",
+            "Miguel Espanhol"
+        ],
+        "intercalar": "14.86",
+        "final": "18.05",
+        "avalia\u00e7\u00e3o": "17.25",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI124.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI125",
+        "Titulo": "Aplica\u00e7\u00e3o de Gest\u00e3o Portfolio Aplicacional",
+        "orientador": "Ac\u00e1cio Carmona",
+        "entidade": "N/A",
+        "alunos": [
+            "Dinis Oliveira",
+            "Constantino Raptis"
+        ],
+        "intercalar": "17.57",
+        "final": "17.57",
+        "avalia\u00e7\u00e3o": "17.57",
+        "epoca": "Entrega Final: 1.\u00aa \u00c9poca",
+        "relatorio": "TFC_20_DEISI125.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI132",
+        "Titulo": "Machine Learning para dete\u00e7\u00e3o de fraude online de cart\u00f5es banc\u00e1rios",
+        "orientador": "Tiago dos Santos",
+        "entidade": "N/A",
+        "alunos": [
+            "Diego Barros",
+            "Catarina Silva"
+        ],
+        "intercalar": "16.00",
+        "final": "16.00",
+        "avalia\u00e7\u00e3o": "16.00",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_20_DEISI132.pdf",
+        "ano": "19-20"
+    },
+    {
+        "tfc": "DEISI134",
+        "Titulo": "Sistema de Avalia\u00e7\u00e3o de Desempenho",
+        "orientador": "Lu\u00eds Gomes",
+        "entidade": "N/A",
+        "alunos": [
+            "Rafael Trindade"
+        ],
+        "intercalar": "13.52",
+        "final": "11.33",
+        "avalia\u00e7\u00e3o": "11.88",
+        "epoca": "Entrega Final: \u00c9poca Especial",
+        "relatorio": "TFC_20_DEISI134.pdf",
+        "ano": "19-20"
+    }
+]

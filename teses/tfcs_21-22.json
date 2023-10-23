@@ -1,0 +1,533 @@
+[
+    {
+        "tfc": "DEISI211",
+        "Titulo": "Plataforma de Monitoriza\u00e7\u00e3o de Impressoras 3D de Constru\u00e7\u00e3o de Casas",
+        "orientador": "Rui Ribeiro",
+        "entidade": "Yucoders, Departamento de Engenharia Civil da ULHT e centro de I&D do DEISI Copelabs",
+        "alunos": [
+            "Filipe Coutinho",
+            "Jo\u00e3o Lima"
+        ],
+        "intercalar": "15.13",
+        "final": "14.80",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_22_DEISI211.pdf",
+        "video": "https://www.youtube.com/watch?v=d0-L-EM2ocE",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI212",
+        "Titulo": "Buddy abroad - Front End",
+        "orientador": "Rui Santos",
+        "entidade": "projeto incubadora PLAY",
+        "alunos": [
+            "Tom\u00e1s Neto",
+            "Rodrigo Santos"
+        ],
+        "intercalar": "11.75",
+        "final": "16.30",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_DEISI212.pdf",
+        "video": "https://www.youtube.com/watch?v=vYYuWkk0zUA",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI213",
+        "Titulo": "Buddy abroad - Back End",
+        "orientador": "Rui Santos",
+        "entidade": "projeto incubadora PLAY",
+        "alunos": [
+            "Nuno Pereira",
+            "Jo\u00e3o Pereira"
+        ],
+        "intercalar": "11.70",
+        "final": "16.43",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_22_DEISI213.pdf",
+        "video": "https://www.youtube.com/watch?v=hKgQvEVKCMk",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI214",
+        "Titulo": "BestRide - Front End",
+        "orientador": "Rui Ribeiro",
+        "entidade": "projeto incubadora PLAY",
+        "alunos": [
+            "Cl\u00e1udio Caetano",
+            "Pedro Costa"
+        ],
+        "intercalar": "14.97",
+        "final": "14.50",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_DEISI214.pdf",
+        "video": "https://www.youtube.com/watch?v=636JJ5ev--w",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI216",
+        "Titulo": "Acompanhamento nutricional em farm\u00e1cias",
+        "orientador": "Pedro Alves",
+        "entidade": "Departamento de Ci\u00eancias Farmac\u00eauticas (ECTS - ULHT)",
+        "alunos": [
+            "Carolina Lopes",
+            "Marisa Santos"
+        ],
+        "intercalar": "17.85",
+        "final": "18.87",
+        "avalia\u00e7\u00e3o": "19",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_DEISI216.pdf",
+        "video": "https://www.youtube.com/watch?v=3hMP5cNEjHI",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI217",
+        "Titulo": "Site DEISI",
+        "orientador": "Pedro Alves",
+        "entidade": "N/A",
+        "alunos": [
+            "Eduardo Miranda"
+        ],
+        "intercalar": "16.67",
+        "final": "17.20",
+        "avalia\u00e7\u00e3o": "17",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_DEISI217.pdf",
+        "video": "https://www.youtube.com/1EctmhZAYg8",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI218",
+        "Titulo": "Gest\u00e3o de centros de investiga\u00e7\u00e3o",
+        "orientador": "Pedro Alves",
+        "entidade": "CeiED (Centro de Estudos Interdisciplinares em Educa\u00e7\u00e3o e Desenvolvimento - ULHT)",
+        "alunos": [
+            "Marco Viana",
+            "Rita Santos"
+        ],
+        "intercalar": "14.47",
+        "final": "11.43",
+        "avalia\u00e7\u00e3o": "12",
+        "epoca": "Entrega Final 2021/2022: \u00c9poca Especial",
+        "relatorio": "TFC_22_DEISI218.pdf",
+        "video": "https://www.youtube.com/watch?v=0pBmIE1SJz0",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI219",
+        "Titulo": "App4SHM 2.0",
+        "orientador": "Pedro Alves",
+        "entidade": "Departamento de Engenharia Civil - ULHT",
+        "alunos": [
+            "Jorge Lob\u00e3o"
+        ],
+        "intercalar": "15.30",
+        "final": "13.10",
+        "avalia\u00e7\u00e3o": "14",
+        "epoca": "Entrega Final 2021/2022: \u00c9poca Especial",
+        "relatorio": "TFC_22_DEISI219.pdf",
+        "video": "https://www.youtube.com/watch?v=ryo9N1ucz_A",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI221",
+        "Titulo": "Acompanhamento de processos judiciais",
+        "orientador": "Pedro Alves",
+        "entidade": "Faculdade de Direito - ULHT",
+        "alunos": [
+            "Tiago Pereira",
+            "Tom\u00e1s Maia"
+        ],
+        "intercalar": "16.00",
+        "final": "16.40",
+        "avalia\u00e7\u00e3o": "16",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_DEISI221.pdf",
+        "video": "https://www.youtube.com/watch?v=HKOnL0BNuwQ&ab_cha",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI222",
+        "Titulo": "BestRide - back End",
+        "orientador": "Rui Ribeiro",
+        "entidade": "Incubadora PLAY",
+        "alunos": [
+            "Ricardo Faia",
+            "\u00c2ngelo Bernardes"
+        ],
+        "intercalar": "14.77",
+        "final": "13.70",
+        "avalia\u00e7\u00e3o": "14",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_DEISI222.pdf",
+        "video": "https://www.youtube.com/watch?v=gxU4hCzMXTc",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI223",
+        "Titulo": "Aplica\u00e7\u00e3o para gest\u00e3o de uma AUGI e situa\u00e7\u00e3o atual na Regi\u00e3o da Grande Lisboa",
+        "orientador": "Ac\u00e1cio Carmona",
+        "entidade": "AUGI 44",
+        "alunos": [
+            "Muhammad Iquibal",
+            "Afonso Cola\u00e7o"
+        ],
+        "intercalar": "15.73",
+        "final": "13.80",
+        "avalia\u00e7\u00e3o": "14",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_DEISI223.pdf",
+        "video": "https://www.youtube.com/watch?v=PLPRbUW7C4U&ab_cha",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI225",
+        "Titulo": "PMO, Gest\u00e3o de Portf\u00f3lio de Projetos e Releases",
+        "orientador": "Ac\u00e1cio Carmona",
+        "entidade": "N/A",
+        "alunos": [
+            "Edith Cardoso",
+            "Diogo Carrilho"
+        ],
+        "intercalar": "16.10",
+        "final": "15.57",
+        "avalia\u00e7\u00e3o": "16",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_DEISI225.pdf",
+        "video": "https://www.youtube.com/playlist?list=PLx68kPfg3cQ",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "Aluno228",
+        "Titulo": "Drop-Project para Android",
+        "orientador": "Miguel Tavares",
+        "entidade": "",
+        "alunos": [
+            "Diogo Ara\u00fajo"
+        ],
+        "intercalar": "14.57",
+        "final": "10.93",
+        "avalia\u00e7\u00e3o": "12",
+        "epoca": "Entrega Final 2021/2022: \u00c9poca Especial",
+        "relatorio": "TFC_22_Aluno228.pdf",
+        "video": "https://www.youtube.com/watch?v=YPrNa21vFEw",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI232",
+        "Titulo": "Plataforma de gest\u00e3o de eventos - v3 (projecto individual)",
+        "orientador": "Bruno Cipriano",
+        "entidade": "N/A",
+        "alunos": [
+            "Telmo Costa"
+        ],
+        "intercalar": "14.63",
+        "final": "14.57",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_DEISI232.pdf",
+        "video": "https://www.youtube.com/watch?v=KZt8T-aAjNA",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI233",
+        "Titulo": "Aplica\u00e7\u00e3o Web para transforma\u00e7\u00e3o digital do protocolo MentHA",
+        "orientador": "L\u00facio Studer",
+        "entidade": "Dire\u00e7\u00e3o Geral da Sa\u00fade (coorientador: Prof. Pedro Santos)",
+        "alunos": [
+            "Nuno Rasteiro"
+        ],
+        "intercalar": "14.83",
+        "final": "18.03",
+        "avalia\u00e7\u00e3o": "17",
+        "epoca": "Entrega Final 2021/2022: \u00c9poca Especial",
+        "relatorio": "TFC_22_DEISI233.pdf",
+        "video": "https://www.youtube.com/watch?v=etwXe0GtgBo",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI235",
+        "Titulo": "Aplica\u00e7\u00e3o Web MenthaCare",
+        "orientador": "L\u00facio Studer",
+        "entidade": "Dire\u00e7\u00e3o Geral da Sa\u00fade (coorientador: Prof. Pedro Santos)",
+        "alunos": [
+            "Ines Rocha",
+            "Jo\u00e3o Santos"
+        ],
+        "intercalar": "17.20",
+        "final": "15.97",
+        "avalia\u00e7\u00e3o": "16",
+        "epoca": "Entrega Final 2021/2022: \u00c9poca Especial",
+        "relatorio": "TFC_22_DEISI235.pdf",
+        "video": "https://www.youtube.com/watch?v=iqmfrwF0xjQ&featur",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI237",
+        "Titulo": "Plataforma de gest\u00e3o financeira para controlo de custos empresariais",
+        "orientador": "Pedro Serra",
+        "entidade": "N/A",
+        "alunos": [
+            "Duarte Cambra"
+        ],
+        "intercalar": "15.23",
+        "final": "15.03",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_22_DEISI237.pdf",
+        "video": "https://www.youtube.com/watch?v=es9JGxIyAcM",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI239",
+        "Titulo": "Aplica\u00e7\u00e3o m\u00f3vel para avalia\u00e7\u00e3o de provas de wakeboard",
+        "orientador": "Pedro Serra",
+        "entidade": "International World Wakeboard Federation",
+        "alunos": [
+            "Matheus Alves"
+        ],
+        "intercalar": "15.93",
+        "final": "12.80",
+        "avalia\u00e7\u00e3o": "14",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_22_DEISI239.pdf",
+        "video": "https://www.youtube.com/watch?v=Y62LV_2FSPU",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI240",
+        "Titulo": "Software de c\u00e1lculo para a gest\u00e3o completa de uma competi\u00e7\u00e3o de wakeboard",
+        "orientador": "Pedro Serra",
+        "entidade": "International World Wakeboard Federation",
+        "alunos": [
+            "Nuno Capela",
+            "Jo\u00e3o Lu\u00eds"
+        ],
+        "intercalar": "17.27",
+        "final": "14.27",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_DEISI240.pdf",
+        "video": "https://www.youtube.com/watch?v=CKc_i5fo9_c&ab_cha",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI241",
+        "Titulo": "Parque de Estacionamento - Front End",
+        "orientador": "Jo\u00e3o Carvalho",
+        "entidade": "N/A",
+        "alunos": [
+            "Daniel Rocha",
+            "Manuel Sousa"
+        ],
+        "intercalar": "15.73",
+        "final": "15.28",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_22_DEISI241.pdf",
+        "video": "https://www.youtube.com/watch?v=kNjaHaQUppE",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI242",
+        "Titulo": "Parque de Estacionamento - Back End",
+        "orientador": "Jo\u00e3o Carvalho",
+        "entidade": "N/A",
+        "alunos": [
+            "Jaime Germano"
+        ],
+        "intercalar": "13.80",
+        "final": "16.40",
+        "avalia\u00e7\u00e3o": "16",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_22_DEISI242.pdf",
+        "video": "https://www.youtube.com/watch?v=kNjaHaQUppE",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI243",
+        "Titulo": "Parque de Estacionamento - Detector de matr\u00edculas",
+        "orientador": "Jo\u00e3o Carvalho",
+        "entidade": "N/A",
+        "alunos": [
+            "Jo\u00e3o Garcia",
+            "Diogo Pereira"
+        ],
+        "intercalar": "15.40",
+        "final": "15.02",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_22_DEISI243.pdf",
+        "video": "https://www.youtube.com/watch?v=GK0dsIcoqvg",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "Aluno244",
+        "Titulo": "UniSpirit- Rede Social Universit\u00e1ria com o objetivo de melhorar o percurso acad\u00e9mico",
+        "orientador": "Concei\u00e7\u00e3o Costa",
+        "entidade": "",
+        "alunos": [
+            "B\u00e1rbara Quaresma"
+        ],
+        "intercalar": "13.47",
+        "final": "15.00",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_22_Aluno244.pdf",
+        "video": "https://www.youtube.com/watch?v=k10FJczHfpY",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "Empresa248",
+        "Titulo": "Test Automation - IPA (intelligent process automation) component to support business continuity management",
+        "orientador": "Jos\u00e9 Cascais Br\u00e1s",
+        "entidade": "CGI TI Portugal",
+        "alunos": [
+            "Leonardo Conceicao",
+            "Danilo Foganholi"
+        ],
+        "intercalar": "13.77",
+        "final": "16.73",
+        "avalia\u00e7\u00e3o": "16",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_Empresa248.pdf",
+        "video": "https://www.youtube.com/watch?v=Ljiy5hNmcnU",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "Empresa251",
+        "Titulo": "Aplica\u00e7\u00e3o mobile central de apps existentes",
+        "orientador": "Rui Santos",
+        "entidade": "Integer Consulting",
+        "alunos": [
+            "Tiago Santos",
+            "Rafael Ribeiro"
+        ],
+        "intercalar": "11.65",
+        "final": "15.30",
+        "avalia\u00e7\u00e3o": "14",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_Empresa251.pdf",
+        "video": "https://www.youtube.com/watch?v=Vm5Zx6ySReg&ab_cha",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "G254",
+        "Titulo": "Aplica\u00e7\u00e3o Web com recurso \u00e0 ferramenta OutSystems",
+        "orientador": "Jos\u00e9 Aser Lourenzo",
+        "entidade": "",
+        "alunos": [
+            "Jo\u00e3o Almeida",
+            "Nuno Castilho"
+        ],
+        "intercalar": "15.23",
+        "final": "13.87",
+        "avalia\u00e7\u00e3o": "14",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_22_G254.pdf",
+        "video": "https://www.youtube.com/watch?v=p6y05LZi94M",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "G255",
+        "Titulo": "Combater o desperd\u00edcio alimentar e 'controlar' a despensa",
+        "orientador": "Pedro Perdig\u00e3o",
+        "entidade": "",
+        "alunos": [
+            "Tiago Silva",
+            "Frederico Azevedo"
+        ],
+        "intercalar": "15.85",
+        "final": "15.53",
+        "avalia\u00e7\u00e3o": "16",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_G255.pdf",
+        "video": "https://www.youtube.com/watch?v=PbzKVh8oxkc",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI256",
+        "Titulo": "Tickets e an\u00e1lise estat\u00edstica - Front End e Back End",
+        "orientador": "Jo\u00e3o Carvalho",
+        "entidade": "N/A",
+        "alunos": [
+            "Jo\u00e3o Ferreira",
+            "Tiago Matos"
+        ],
+        "intercalar": "16.70",
+        "final": "15.93",
+        "avalia\u00e7\u00e3o": "16",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_22_DEISI256.pdf",
+        "video": "https://www.youtube.com/watch?v=CCnqAmEdNHc&featur",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI258",
+        "Titulo": "Modelamento multi-agente de intera\u00e7\u00f5es em grupos sociais.",
+        "orientador": "Manuel Marques Pita",
+        "entidade": "N/A",
+        "alunos": [
+            "Paulo Pinto"
+        ],
+        "intercalar": "18.20",
+        "final": "17.70",
+        "avalia\u00e7\u00e3o": "18",
+        "epoca": "Entrega Final 2021/2022: \u00c9poca Especial",
+        "relatorio": "TFC_22_DEISI258.pdf",
+        "video": "https://www.youtube.com/watch?v=Kxuzy2PXCTc",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "Aluno259",
+        "Titulo": "Aplica\u00e7\u00e3o mobile para requisi\u00e7\u00e3o de livros de uma biblioteca escolar",
+        "orientador": "Rodrigo Correia",
+        "entidade": "",
+        "alunos": [
+            "Lodney Santos"
+        ],
+        "intercalar": "15.60",
+        "final": "15.97",
+        "avalia\u00e7\u00e3o": "16",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_Aluno259.pdf",
+        "video": "https://www.youtube.com/watch?v=esxH4HMfb_U&t=14s",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI260",
+        "Titulo": "Desenvolvimento de aplica\u00e7\u00e3o WEB em PHP usando o gerador de c\u00f3digo PhpMyEDIT",
+        "orientador": "Jos\u00e9 Aser Lourenzo",
+        "entidade": "N/A",
+        "alunos": [
+            "Xiaoyue Xie"
+        ],
+        "intercalar": "8.07",
+        "final": "10.20",
+        "avalia\u00e7\u00e3o": "10",
+        "epoca": "Entrega Final: \u00c9poca de Recurso",
+        "relatorio": "TFC_22_DEISI260.pdf",
+        "video": "https://www.youtube.com/watch?v=1b3-ckE3fXs",
+        "ano": "21-22"
+    },
+    {
+        "tfc": "DEISI263",
+        "Titulo": "AARO - Auto Avalia\u00e7\u00e3o de Risco da Organiza\u00e7\u00e3o",
+        "orientador": "Jos\u00e9 Cascais Br\u00e1s",
+        "entidade": "CGI TI Portugal",
+        "alunos": [
+            "Rog\u00e9rio Oliveira"
+        ],
+        "intercalar": "12.43",
+        "final": "15.47",
+        "avalia\u00e7\u00e3o": "15",
+        "epoca": "Entrega Final: 1\u00aa \u00c9poca",
+        "relatorio": "TFC_22_DEISI263.pdf",
+        "video": "https://www.youtube.com/watch?v=79esxYAeh2E",
+        "ano": "21-22"
+    }
+]
