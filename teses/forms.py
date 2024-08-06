@@ -11,12 +11,4 @@ class TeseForm(ModelForm):
 
     class Meta:
         model = Tese
-        fields = ['resumo', 'areas', 'tecnologias']
-
-
-
-
-class TeseEditForm(forms.ModelForm):
-    class Meta:
-        model = Tese
-        fields = ['resumo', 'areas', 'tecnologias', 'imagem', 'recil', 'relatorio', 'link']
+        fields = ['resumo', 'palavras_chave', 'areas', 'tecnologias']

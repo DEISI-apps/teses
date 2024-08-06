@@ -23,22 +23,26 @@ label, .etiqueta {
         {{ tese.titulo }}
         </b>
     </h3>
-    autor: <b>{{ tese.alunos }}</b>, orientador: <b>{% for orientador in tese.orientadores.all %}{{ orientador }}{% endfor %}</b>
+    autor: <b>{{ tese.autores }}</b>, orientador: <b>{% for orientador in tese.orientadores.all %}{{ orientador }}{% if not forloop.last %}, {% endif %}{% endfor %}</b>
     {%  if tese.entidade_externa != '' and  tese.entidade_externa != None and tese.entidade_externa != "N/A"  %}Em parceria com <b>{{tese.entidade_externa}}</b> {% endif %}
     <br>
     <i>
-       {% for curso in tese.cursos.all %}{{ curso }}{% endfor %}, ano lectivo 20{{ tese.ano }}, <a href="" download>Descarregar Relatório</a><br>
+       {% for curso in tese.cursos.all %}{{ curso }}{% endfor %}, ano lectivo 20{{ tese.ano }}, {% if tese.relatorio %}<a href="{{ tese.relatorio.url }}" download>Descarregar Relatório</a><br>{% endif %}
     </i>
     <hr>
 
     <p><span class="etiqueta">Resumo: </span>{{ tese.resumo|linebreaksbr }}</p>
 
-    <span class="etiqueta">Area:</span>
-    {% for area in tese.areas.all %}{{ area }}{% if not forloop.last %};{% else %}.{% endif %}{% endfor %}
-    <br>
+    <span class="etiqueta">Palavras chave:</span>
+    {% for p in tese.palavras_chave.all %}{{ p }}{% if not forloop.last %}; {% else %}.{% endif %}{% endfor %}
+    <br><br>
+
+    <span class="etiqueta">Areas:</span>
+    {% for area in tese.areas.all %}{{ area }}{% if not forloop.last %}; {% else %}.{% endif %}{% endfor %}
+    <br><br>
 
     <span class="etiqueta">Tecnologias usadas:</span>
-    {% for tec in tese.tecnologias.all %}{{ tec }}{% if not forloop.last %};{% else %}.{% endif %}{% endfor %}
+    {% for tec in tese.tecnologias.all %}{{ tec }}{% if not forloop.last %}; {% else %}.{% endif %}{% endfor %}
     <br>
 
     <br>

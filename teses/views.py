@@ -36,7 +36,7 @@ def carrega_teses():
                 numero = tfc['tfc'],
                 titulo = tfc['Titulo'],
                 entidade_externa = tfc['entidade'],
-                alunos = ' e '.join(tfc['alunos']),
+                autores = ' e '.join(tfc['autores']),
                 avaliacao = tfc['final'],
                 relatorio = tfc['relatorio'],
                 ano = Ano.objects.get(ano = tfc['ano']),
@@ -62,66 +62,88 @@ def index_view(request):
     #carrega_orientadores()
     #carrega_teses()
 
-    context = {'teses': Tese.objects.all().order_by('numero'),
+    context = {
+        'tfcs': Tese.objects.filter(cursos__ciclo__numero=1).order_by('-ano__ano','autores'),
+        'mscs': Tese.objects.filter(cursos__ciclo__numero=2).order_by('-ano__ano','autores'),
+        'phds': Tese.objects.filter(cursos__ciclo__numero=3).order_by('-ano__ano','autores'),
         }
 
     return render(request, 'teses/index.html', context)
 
+
+def extract_view(request):
+
+    #carrega_orientadores()
+    #carrega_teses()
+
+    for tese in Tese.objects.filter(cursos__ciclo__numero=1):
+        if tese.resumo:
+            tese.resumo = " ".join(tese.resumo.split())
+
+
+        tese.autores = tese.autores.capitalize()
+        tese.save()
+
+    context = {
+        'tfcs': Tese.objects.filter(cursos__ciclo__numero=1).order_by('-ano__ano','autores'),
+        'mscs': Tese.objects.filter(cursos__ciclo__numero=2).order_by('-ano__ano','autores'),
+        'phds': Tese.objects.filter(cursos__ciclo__numero=3).order_by('-ano__ano','autores'),
+        }
+
+    return render(request, 'teses/extract.html', context)
+
+def extract_defesas_view(request):
+
+    for tese in Tese.objects.filter(cursos__ciclo__numero=1):
+        if tese.resumo:
+            tese.resumo = " ".join(tese.resumo.split())
+
+        tese.autores = tese.autores.capitalize()
+        tese.save()
+
+    tfcs_agendados = Tese.objects.filter(cursos__ciclo__numero=1, ano__ano='2024').exclude(defesa_dia=None).distinct().order_by('-ano__ano','defesa_dia','defesa_hora','numero_TFC')
+    tfcs_por_agendar = Tese.objects.filter(cursos__ciclo__numero=1, ano__ano='2024').filter(defesa_dia=None).distinct()
+
+    context = {
+        'tfcs': list(tfcs_agendados) + list(tfcs_por_agendar),
+        }
+
+    return render(request, 'teses/extract_defesas.html', context)
+
+
 from django.core.files.storage import FileSystemStorage
+
 
 def edita_view(request, tese_id):
 
     f = open('logger.txt', 'a')
     f.write("\n\nentrada\n")
-    tese = Tese.objects.get(id=tese_id)
-
-    form = TeseForm(request.POST or None, request.FILES, instance=tese)
-
-    f.write(f"form.is_valid(): {form.is_valid()}\n")
-
-    f.write(f"tese: {tese}\n")
-
-    f.write(f"request.POST: {request.POST}\n")
-
-
-    if request.method == 'POST' and form.is_valid():
-
-            tese = form.save(commit=False)
-
-            tese.resumo = '\r\n\r\n'.join([paragrafo.replace('\r\n',' ') for paragrafo in tese.resumo.split('\r\n\r\n')])
-            tese.save()
-
-            uploaded_file = request.FILES.get('imagem')
-            if uploaded_file:
-                # Create a unique filename for the uploaded file, e.g., based on tese_id
-                unique_filename = f'TFC_{tese.ano.ano[:2]}_{tese_id}_{uploaded_file.name}'
-
-                # Save the file to the designated folder (MEDIA_ROOT)
-                fs = FileSystemStorage()
-                filename = fs.save(unique_filename, uploaded_file)
-                tese.imagem = filename  # Store the filename in your model
-                tese.save()
-
-            # Process new keywords
-            new_keywords = request.POST.getlist('new_keywords')
-            for keyword in new_keywords:
-                if keyword:
-                    for k in keyword.split(';'):
-                        # Create a new PalavraChave object
-                        new_keyword = PalavraChave.objects.create(nome=k.strip())
-                        # Associate the new keyword with the Tese
-                        tese.palavras_chave.add(new_keyword)
-
-
-            return redirect('index')
-
-
-    context = {'tese': tese, 'form': form, 'tese_id': tese_id}
     f.write("\n\n")
     f.close()
 
+    tese = Tese.objects.get(id=tese_id)
+    context = {'tese': tese}
 
     return render(request, 'teses/edita.html', context)
 
 
 
+
+import requests
+from django.http import JsonResponse
+
+def download_teses_BD_Alves_json(request):
+    # Fazendo a solicitação à API com o token
+    headers = {'x-api-token': 'cody2024'}
+    url = 'https://deisi.ulusofona.pt/tfc/api/all'
+    response = requests.get(url, headers=headers)
+
+    # Verificando se a solicitação foi bem sucedida
+    if response.status_code == 200:
+        # Convertendo a resposta para JSON
+        data = response.json()
+        return JsonResponse(data)
+    else:
+        # Caso a solicitação falhe, retornar um JSON com uma mensagem de erro
+        error_message = {'error': 'Erro ao acessar a API'}
+        return JsonResponse(error_message, status=response.status_code)

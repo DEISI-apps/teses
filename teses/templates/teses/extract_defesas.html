@@ -1,0 +1,55 @@
+<p>Explore e venha assistir às apresentações públicas dos 48 Trabalhos Finais de Curso (TFCs) de 2024 do DEISI. As apresentações decorrem entre 3 e 27 de julho. Estão agrupadas em slots 9h-12h, 14h-17h e 18h30-21h30, Cada trabalho (apresentação e discussão) dura cerca de 30 min. TFCs de anos anteriores encontram-se <a href="https://informatica.ulusofona.pt/tfcs-dissertacoes-teses/">aqui</a>.</p>
+<p>Certamente há tópicos de seu interesse que o inspirarão! <strong>Venha conhecer os trabalhos dos finalistas do DEISI!</strong></p>
+<p style="margin-bottom:6ch;">Se tiver interesse em propor um tema para um Trabalho Final de Curso, entre em contacto connosco!</p>
+
+<div class="uk-card uk-card-default uk-card-body">
+    <ul uk-accordion class="uk-accordion">
+{% for tese in tfcs %}
+    <li style="margin: -10px 0 !important; padding: 20px 0 10px !important;">
+    <a id="tese{{ forloop.counter }}" class="uk-accordion-title" ><span style="background:black;color:white;margin-bottom: -20px;display: block;padding: 5px 10px;">{% if tese.defesa_dia %}{{ tese.defesa_dia }}, {{ tese.defesa_hora }}{% else %}Por agendar entre 15 e 27.7{% endif %}, sala Q.3.1</span>
+    <span style="display: block;font-weight:800;font-size: 1.4em;margin-bottom: 10px;color: #e6094d;">{{ tese.titulo }}</span><span style="font-weight:100; font-size:16px"><span style="ccolor:#e6094d;  font-weight:bold;">{{ tese.autores|title }}</span>. Orientador: <span style="ccolor:#e6094d; font-weight:bold;">{% for orientador in tese.orientadores.all %}{{ orientador }}{% if not forloop.last %}, {% endif %}{% endfor %}</span>{% if tese.entidade_externa != '' and  tese.entidade_externa != None and tese.entidade_externa != "N/A" %}<br>Em parceria com <b>{{tese.entidade_externa}}</b> {% endif %}
+    <span style="font-style:italic;">{% for curso in tese.cursos.all %}{{ curso }}{% if not forloop.last %}, {% endif %}{% endfor %}, {{ tese.ano }}</span></a>
+    <div class="uk-accordion-content" style="margin-bottom:40px;">
+
+    <p><span style="font-weight:bold">Resumo: </span>{{ tese.resumo|linebreaksbr }}</p>
+    {% if tese.imagem %}
+    <br>
+    <img src="https://teses.pythonanywhere.com{{ tese.imagem.url }}" width="100%" style="border: 1px solid black;">
+    {% endif %}
+    <br>
+    {% if tese.palavras_chave.all %}
+    <span style="font-weight:bold">Palavras chave:</span> {% for p in tese.palavras_chave.all %}{{ p }}{% if not forloop.last %}; {% else %}.{% endif %}{% endfor %}
+    <br>
+    {% endif %}
+
+    {% if tese.areas.all %}
+    <span style="font-weight:bold">Áreas:</span> {% for area in tese.areas.all %}{{ area }}{% if not forloop.last %}; {% else %}.{% endif %}{% endfor %}
+    <br>
+    {% endif %}
+
+    {% if tese.tecnologias.all %}
+    <span style="font-weight:bold">Tecnologias usadas:</span> {% for tec in tese.tecnologias.all %}{{ tec }}{% if not forloop.last %}; {% else %}. {% endif %}{% endfor %}
+    <br>
+    {% endif %}
+
+    <br>
+
+    {% if tese.video %}
+    <br>
+    <div class="video-responsive" id="video">
+    [embed]{{ tese.video }}[/embed]
+    </div>
+    {% endif %}
+
+    </div>
+    </li>
+{% endfor %}
+</ul>
+</div>
+
+
+
+
+
+
+

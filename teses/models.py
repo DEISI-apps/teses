@@ -4,6 +4,9 @@ from django.db import models
 class Ano(models.Model):
     ano = models.CharField(max_length= 200)
 
+    class Meta:
+        ordering = ('-ano',)  # Order by 'ano' field
+
     def __str__(self):
         return f"{self.ano}"
 
@@ -25,12 +28,27 @@ class Curso(models.Model):
 class Orientador(models.Model):
     nome = models.CharField(max_length= 200)
 
+    class Meta:
+        ordering = ('nome',)
+
     def __str__(self):
         return f"{self.nome}"
 
 
+class PalavraChave(models.Model):
+    nome = models.CharField(max_length= 200)
+
+    class Meta:
+        ordering = ('nome',)
+
+    def __str__(self):
+        return f"{self.nome}"
+
 class Area(models.Model):
     nome = models.CharField(max_length= 200)
+
+    class Meta:
+        ordering = ('nome',)
 
     def __str__(self):
         return f"{self.nome}"
@@ -38,28 +56,44 @@ class Area(models.Model):
 class Tecnologia(models.Model):
     nome = models.CharField(max_length= 200)
 
+    class Meta:
+        ordering = ('nome',)
+
     def __str__(self):
         return f"{self.nome}"
 
 
 class Tese(models.Model):
-    numero = models.CharField(max_length= 200, blank=True, null=True)
+    defesa_dia = models.DateField(default=None, blank=True, null=True)
+    defesa_hora = models.TimeField(default=None, blank=True, null=True)
     titulo = models.CharField(max_length= 200)
-    resumo = models.TextField(blank=True, null=True)
-    areas =  models.ManyToManyField(Area, related_name = 'teses')
-    tecnologias =  models.ManyToManyField(Tecnologia, related_name = 'teses')
+    numero_TFC = models.CharField(max_length= 200, blank=True, null=True)
+    autores = models.CharField(max_length= 200, default=None)
+    email_contacto =  models.CharField(max_length= 200, blank=True, null=True, default=None)
     orientadores = models.ManyToManyField(Orientador, related_name = 'teses')
     entidade_externa =  models.CharField(max_length= 300, blank=True, null=True)
-    alunos = models.CharField(max_length= 200, blank=True, null=True)
+
     cursos = models.ManyToManyField(Curso, related_name = 'cursos')
     ano = models.ForeignKey(Ano, on_delete=models.CASCADE, related_name = 'teses')
-    relatorio = models.FileField(upload_to="", blank=True, null=True)
-    imagem = models.ImageField(upload_to="", null=True, blank=True)
+
+    resumo = models.TextField(blank=True, null=True, default=None)
+
+    palavras_chave =  models.ManyToManyField(PalavraChave, related_name = 'teses', blank=True, null=True)
+    areas =  models.ManyToManyField(Area, related_name = 'teses', blank=True, null=True)
+    tecnologias =  models.ManyToManyField(Tecnologia, related_name = 'teses', blank=True, null=True)
+
+    relatorio = models.FileField(upload_to="teses/", blank=True, null=True)
+
+    imagem = models.ImageField(upload_to="teses/", null=True, blank=True)
     video =  models.CharField(max_length= 200, blank=True, null=True)
     github = models.CharField(max_length= 200, blank=True, null=True)
     recil = models.CharField(max_length= 200, blank=True, null=True)
-    link = models.CharField(max_length= 200, blank=True, null=True)
+    link_aplicacao = models.CharField(max_length= 200, blank=True, null=True)
+
     avaliacao = models.CharField(max_length= 200, blank=True, null=True)
 
+    class Meta:
+        ordering = ('titulo',)
+
     def __str__(self):
-        return f"{self.titulo}, {self.alunos}"
+        return f"{self.titulo}, {self.autores}"

@@ -28,12 +28,13 @@ a:hover{
 }
 
 {% endblock style %}
-
-
-
 {% block main %}
 
-{% for tese in teses %}
+
+
+<h1>Trabalhos Finais de Curso</h1>
+
+{% for tese in tfcs %}
     <a href="{% url 'edita' tese.id %}">
         <div>
             <h4>
@@ -42,15 +43,59 @@ a:hover{
         </b>
     </h4>
     <span class="black">
-        autor: <b>{{ tese.alunos }}</b>, orientador: <b>{% for orientador in tese.orientadores.all %}{{ orientador }}{% endfor %}</b>
+        <b>{{ tese.autores|title }}</b>, orientador: <b>{% for orientador in tese.orientadores.all %}{{ orientador }}{% if not forloop.last %}, {% endif %}{% endfor %}</b>
         {% if tese.entidade_externa != '' and  tese.entidade_externa != None and tese.entidade_externa != "N/A" %}<br>Em parceria com <b>{{tese.entidade_externa}}</b> {% endif %}
         <br>
         <i>
-           {% for curso in tese.cursos.all %}{{ curso }}{% endfor %}, ano lectivo 20{{ tese.ano }}<br>
+           {% for curso in tese.cursos.all %}{{ curso }}{% endfor %}, {{ tese.ano }}<br>
         </i>
     </span>
         </div>
     </a>
 {% endfor %}
+
+
+<h1>Dissertações de Mestrado e Teses de Doutoramento</h1>
+
+{% for tese in phds %}
+    <a href="{% url 'edita' tese.id %}">
+        <div>
+            <h4>
+        <b>
+        {{ tese.titulo }}
+        </b>
+    </h4>
+    <span class="black">
+        autor: <b>{{ tese.autores }}</b>, orientador: <b>{% for orientador in tese.orientadores.all %}{{ orientador }}{% endfor %}</b>
+        {% if tese.entidade_externa != '' and  tese.entidade_externa != None and tese.entidade_externa != "N/A" %}<br>Em parceria com <b>{{tese.entidade_externa}}</b> {% endif %}
+        <br>
+        <i>
+           {% for curso in tese.cursos.all %}{{ curso }}{% endfor %}, {{ tese.ano }}<br>
+        </i>
+    </span>
+        </div>
+    </a>
+{% endfor %}
+
+{% for tese in mscs %}
+    <a href="{% url 'edita' tese.id %}">
+        <div>
+            <h4>
+        <b>
+        {{ tese.titulo }}
+        </b>
+    </h4>
+    <span class="black">
+        autor: <b>{{ tese.autores }}</b>, orientador: <b>{% for orientador in tese.orientadores.all %}{{ orientador }}{% endfor %}</b>
+        {% if tese.entidade_externa != '' and  tese.entidade_externa != None and tese.entidade_externa != "N/A" %}<br>Em parceria com <b>{{tese.entidade_externa}}</b> {% endif %}
+        <br>
+        <i>
+           {% for curso in tese.cursos.all %}{{ curso }}{% endfor %}, {{ tese.ano }}<br>
+        </i>
+    </span>
+        </div>
+    </a>
+{% endfor %}
+
 
 {% endblock main %}

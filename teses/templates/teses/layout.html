@@ -24,6 +24,16 @@
             max-width: 800px;
             margin: 60px auto;
         }
+        button {
+            width: 150px;
+            font-weight:bold;
+            margin: 5px;
+            border-radius:10px;
+            padding: 10px;
+        }
+        button:hover {
+            opacity: 0.7;
+        }
 
         {% block style %}
         {% endblock style %}
@@ -35,7 +45,7 @@
     <header>
         <img src="{% static '/teses/deisi-inverse.svg' %}" style="width: 150px;">
         <h1> Relatórios e Teses </h1></div>
-        <img src="{% static '/teses/deisi-inverse.svg' %}" style="width: 150px; visibility:hidden;">
+        <a href="{% url 'admin:index' %}"><button>Admin</button></a>
     </header>
     <main>
 
