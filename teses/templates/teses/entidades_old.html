@@ -1,0 +1,19 @@
+
+<div class="uk-card uk-card-default uk-card-body">
+    <ul uk-accordion class="uk-accordion">
+    {% for tese in tfcs %}
+        {% if tese.entidade_externa != '' and  tese.entidade_externa != None and tese.entidade_externa != "N/A" %}
+            <li style="margin: -10px 0 !important; padding: 20px 0 10px !important;">
+            <br><b>{{tese.entidade_externa}}</b>: <a class="uk-accordion-title" ><span style="display: block;font-weight:800;font-size: 1.4em;margin-bottom: 10px;color: #e6094d;">{{ tese.titulo }}</span><span style="font-weight:100; font-size:16px"><span style="ccolor:#e6094d;  font-weight:bold;">{{ tese.autores|title }}</span>. Orientador: <span style="ccolor:#e6094d; font-weight:bold;">{% for orientador in tese.orientadores.all %}{{ orientador }}{% if not forloop.last %}, {% endif %}{% endfor %}</span>
+            <span style="font-style:italic;">{% for curso in tese.cursos.all %}{{ curso }}{% endfor %}, {{ tese.ano }}</span></a>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+</div>
+
+
+
+
+
+

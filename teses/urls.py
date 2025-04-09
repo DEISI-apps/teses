@@ -1,26 +1,11 @@
-"""project URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.0/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
-from django.contrib import admin
-from django.urls import path, include
-
+from django.urls import path
 from . import views
 
 urlpatterns = [
     path('', views.index_view, name='index'),
     path('extract/', views.extract_view, name='extract'),
+    path('extract_a_decorrer/', views.extract_a_decorrer_view, name='extract_a_decorrer'),
+        path('entidades/', views.entidades_view, name='entidades'),
     path('extract_defesas/', views.extract_defesas_view, name='extract-defesas'),
     path('edita/<int:tese_id>', views.edita_view, name='edita'),
     path('download_json/', views.download_teses_BD_Alves_json, name='download_json'),

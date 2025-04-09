@@ -1,8 +1,8 @@
-from django.shortcuts import render, redirect
 import os
 import json
 from .models import *
 from .forms import TeseForm
+from django.shortcuts import render
 
 file_name = 'tfcs_21-22.json'
 
@@ -56,16 +56,21 @@ def carrega_teses():
         tese.save()
 
 
+from django.contrib.auth.models import Group
 
 def index_view(request):
 
     #carrega_orientadores()
     #carrega_teses()
 
+    grupo_alunos_tfc = Group.objects.get(name="alunos-tfc")
+    tfcs_em_curso = Tese.objects.filter(owner__groups=grupo_alunos_tfc)
+
     context = {
-        'tfcs': Tese.objects.filter(cursos__ciclo__numero=1).order_by('-ano__ano','autores'),
-        'mscs': Tese.objects.filter(cursos__ciclo__numero=2).order_by('-ano__ano','autores'),
-        'phds': Tese.objects.filter(cursos__ciclo__numero=3).order_by('-ano__ano','autores'),
+        'tfcs_em_curso': Tese.objects.filter(concluido=False).filter(cursos__ciclo__numero=1).order_by('-ano__ano','titulo').distinct(),
+        'tfcs': Tese.objects.filter(concluido=True).filter(cursos__ciclo__numero=1).order_by('-ano__ano','titulo').distinct(),
+        'mscs': Tese.objects.filter(cursos__ciclo__numero=2).order_by('-ano__ano','titulo'),
+        'phds': Tese.objects.filter(cursos__ciclo__numero=3).order_by('-ano__ano','titulo'),
         }
 
     return render(request, 'teses/index.html', context)
@@ -80,17 +85,83 @@ def extract_view(request):
         if tese.resumo:
             tese.resumo = " ".join(tese.resumo.split())
 
-
         tese.autores = tese.autores.capitalize()
         tese.save()
 
+    grupo_alunos_tfc = Group.objects.get(name="alunos-tfc")
+    tfcs_em_curso = Tese.objects.filter(owner__groups=grupo_alunos_tfc)
+
     context = {
-        'tfcs': Tese.objects.filter(cursos__ciclo__numero=1).order_by('-ano__ano','autores'),
+        'tfcs_em_curso': Tese.objects.filter(concluido=False).filter(cursos__ciclo__numero=1).order_by('-ano__ano','titulo').distinct(),
+        'tfcs': Tese.objects.filter(concluido=True).filter(cursos__ciclo__numero=1).order_by('-ano__ano','autores').distinct(),
         'mscs': Tese.objects.filter(cursos__ciclo__numero=2).order_by('-ano__ano','autores'),
         'phds': Tese.objects.filter(cursos__ciclo__numero=3).order_by('-ano__ano','autores'),
         }
 
     return render(request, 'teses/extract.html', context)
+
+
+
+def extract_a_decorrer_view(request):
+
+    for tese in Tese.objects.filter(cursos__ciclo__numero=1):
+        if tese.resumo:
+            tese.resumo = " ".join(tese.resumo.split())
+
+        tese.autores = tese.autores.capitalize()
+        tese.save()
+
+    grupo_alunos_tfc = Group.objects.get(name="alunos-tfc")
+    tfcs_em_curso = Tese.objects.filter(owner__groups=grupo_alunos_tfc)
+
+    context = {
+        'tfcs_em_curso': Tese.objects.filter(concluido=False).filter(cursos__ciclo__numero=1).order_by('-ano__ano','titulo').distinct(),
+        }
+
+    return render(request, 'teses/extract_a_decorrer.html', context)
+
+
+
+
+
+
+def entidades_old_view(request):
+
+    for tese in Tese.objects.filter(cursos__ciclo__numero=1):
+        if tese.resumo:
+            tese.resumo = " ".join(tese.resumo.split())
+
+
+        tese.autores = tese.autores.capitalize()
+        tese.save()
+
+
+    context = {
+        'tfcs': Tese.objects.filter(cursos__ciclo__numero=1).order_by('-ano__ano','autores'),
+        }
+
+    return render(request, 'teses/entidades.html', context)
+
+
+def entidades_view(request):
+
+    entidades = [tese.entidade_externa for tese in Tese.objects.all() if (tese.entidade_externa != '' and  tese.entidade_externa != None and tese.entidade_externa != "N/A")]
+
+    lista_entidades = sorted(list(set(entidades)))
+    entidades = {entidade:[] for entidade in lista_entidades}
+
+    for tese in Tese.objects.filter(cursos__ciclo__numero=1):
+        if (tese.entidade_externa != '' and  tese.entidade_externa != None and tese.entidade_externa != "N/A"):
+            tese.autores = tese.autores.capitalize()
+            tese.save()
+            entidades[tese.entidade_externa] += [tese]
+
+    context = {
+        'entidades': entidades
+        }
+
+    return render(request, 'teses/entidades.html', context)
+
 
 def extract_defesas_view(request):
 
@@ -125,8 +196,6 @@ def edita_view(request, tese_id):
     context = {'tese': tese}
 
     return render(request, 'teses/edita.html', context)
-
-
 
 
 import requests

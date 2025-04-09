@@ -1,0 +1,63 @@
+
+<p>No DEISI é estimulada uma cultura de ligação à Sociedade. Os docentes e alunos são incentivados a desenvolver de projetos colaborativos com empresas, entidades de interesse públicas e associações, assim como projetos de empreendedorismo social.</p>
+<p>Têm sido desenvolvidos importantes contributos na construção deste importante pilar. Apresenta-se em baixo uma lista de entidades externas com que temos tido relação e projetos que têm sido desenvolvidos. A lista compila projetos desde 2020, apesar de existirem projetos desde 2014 cuja compilação está em curso.</p>
+
+<div class="uk-card uk-card-primary uk-card-body">
+    <ul uk-accordion class="uk-accordion">
+    {% for entidade, teses in entidades.items %}
+    <li style="margin: -10px !important; padding: 20px 0 10px !important;">
+    <a class="uk-accordion-title" ><span style="font-weight:800; font-size:1.2em">{{entidade}}</a>
+    <div class="uk-accordion-content" style="margin-bottom:40px;">
+<div class="uk-card uk-card-secondary uk-card-body">
+    <ul uk-accordion class="uk-accordion">
+{% for tese in teses %}
+    <li style="margin: -10px 0 !important; padding: 20px 0 10px !important;">
+    <a class="uk-accordion-title" ><span style="display: block;font-weight:800;font-size: 1.1em;margin-bottom: 10px;color: #e6094d;">{{ tese.titulo }}</span><span style="font-weight:100; font-size:16px"><span style="ccolor:#e6094d;  font-weight:bold;">{{ tese.autores|title }}</span>. Orientador: <span style="ccolor:#e6094d; font-weight:bold;">{% for orientador in tese.orientadores.all %}{{ orientador }}{% if not forloop.last %}, {% endif %}{% endfor %}</span>
+    <span style="font-style:italic;">{% for curso in tese.cursos.all %}{{ curso }}{% endfor %}, {{ tese.ano }}</span></a>
+    <div class="uk-accordion-content" style="margin-bottom:40px;">
+
+    {% if tese.relatorio %}
+    <p><a href="https://teses.pythonanywhere.com{{ tese.relatorio.url }}" target="_blank" download>Descarregar Relatório</a></p>
+    {% endif %}
+    <p><span style="font-weight:bold">Resumo: </span>{{ tese.resumo|linebreaksbr }}</p>
+
+    {% if tese.palavras_chave.all %}
+    <span style="font-weight:bold">Palavras chave:</span> {% for p in tese.palavras_chave.all %}{{ p }}{% if not forloop.last %}; {% else %}.{% endif %}{% endfor %}
+    <br>
+    {% endif %}
+
+    {% if tese.areas.all %}
+    <span style="font-weight:bold">Áreas:</span> {% for area in tese.areas.all %}{{ area }}{% if not forloop.last %}; {% else %}.{% endif %}{% endfor %}
+    <br>
+    {% endif %}
+
+    {% if tese.tecnologias.all %}
+    <span style="font-weight:bold">Tecnologias usadas:</span> {% for tec in tese.tecnologias.all %}{{ tec }}{% if not forloop.last %}; {% else %}. {% endif %}{% endfor %}
+    <br>
+    {% endif %}
+
+    <br>
+    {% if tese.imagem %}
+    <br>
+    <img src="https://teses.pythonanywhere.com{{ tese.imagem.url }}" width="50%">
+    {% endif %}
+
+    <br>
+    {% if tese.video %}
+    <br>
+    [embed]{{ tese.video }}[/embed]
+    {% endif %}
+
+    </div>
+    </li>
+{% endfor %}
+</ul>
+
+</div>
+</li>
+
+{% endfor %}
+
+</ul>
+</div>
+

@@ -32,6 +32,31 @@ a:hover{
 
 
 
+<h1>Trabalhos Finais de Curso a Decorrer</h1>
+
+{% for tese in tfcs_em_curso %}
+    <a href="{% url 'edita' tese.id %}">
+        <div>
+            <h4>
+        <b>
+        {{ tese.titulo }}
+        </b>
+    </h4>
+    <span class="black">
+        <b>{{ tese.autores|title }}</b>, orientador: <b>{% for orientador in tese.orientadores.all %}{{ orientador }}{% if not forloop.last %}, {% endif %}{% endfor %}</b>
+        {% if tese.entidade_externa != '' and  tese.entidade_externa != None and tese.entidade_externa != "N/A" %}<br>Em parceria com <b>{{tese.entidade_externa}}</b> {% endif %}
+        <br>
+        <i>
+           {% for curso in tese.cursos.all %}{{ curso }}. {% endfor %} {{ tese.ano }}<br>
+        </i>
+    </span>
+        </div>
+    </a>
+{% endfor %}
+
+
+
+
 <h1>Trabalhos Finais de Curso</h1>
 
 {% for tese in tfcs %}
@@ -47,7 +72,7 @@ a:hover{
         {% if tese.entidade_externa != '' and  tese.entidade_externa != None and tese.entidade_externa != "N/A" %}<br>Em parceria com <b>{{tese.entidade_externa}}</b> {% endif %}
         <br>
         <i>
-           {% for curso in tese.cursos.all %}{{ curso }}{% endfor %}, {{ tese.ano }}<br>
+           {% for curso in tese.cursos.all %}{{ curso }}. {% endfor %} {{ tese.ano }}<br>
         </i>
     </span>
         </div>
