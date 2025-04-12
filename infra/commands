@@ -30,3 +30,6 @@ sudo nginx -t
 
 # 10 Verificar sites habilitados
 ls /etc/nginx/sites-enabled/git
+
+# 11 reiniciar servico depois de alteracoes
+sudo systemctl restart teses.service
