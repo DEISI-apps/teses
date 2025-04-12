@@ -63,78 +63,69 @@ def index_view(request):
     #carrega_orientadores()
     #carrega_teses()
 
-    grupo_alunos_tfc = Group.objects.get(name="alunos-tfc")
-    tfcs_em_curso = Tese.objects.filter(owner__groups=grupo_alunos_tfc)
-
     context = {
-        'tfcs_em_curso': Tese.objects.filter(concluido=False).filter(cursos__ciclo__numero=1).order_by('-ano__ano','titulo').distinct(),
-        'tfcs': Tese.objects.filter(concluido=True).filter(cursos__ciclo__numero=1).order_by('-ano__ano','titulo').distinct(),
-        'mscs': Tese.objects.filter(cursos__ciclo__numero=2).order_by('-ano__ano','titulo'),
-        'phds': Tese.objects.filter(cursos__ciclo__numero=3).order_by('-ano__ano','titulo'),
-        }
+        'teses_todas': [
+            {'titulo': 'Trabalhos Finais de Curso a decorrer', 'teses': Tese.objects.filter(concluido=False, cursos__ciclo__numero=1).order_by('-ano__ano','titulo').distinct()},
+            {'titulo': 'Dissertações de Mestrado a decorrer', 'teses': Tese.objects.filter(concluido=False, cursos__ciclo__numero=2).order_by('-ano__ano','titulo').distinct()},
+            {'titulo': 'Teses de Doutoramento a decorrer', 'teses': Tese.objects.filter(concluido=False, cursos__ciclo__numero=3).order_by('-ano__ano','titulo').distinct()},
+            {'titulo': 'Trabalhos Finais de Curso concluídos', 'teses': Tese.objects.filter(concluido=True, cursos__ciclo__numero=1).order_by('-ano__ano','titulo').distinct()},
+            {'titulo': 'Dissertações de Mestrado concluídas', 'teses': Tese.objects.filter(concluido=True, cursos__ciclo__numero=2).order_by('-ano__ano','titulo')},
+            {'titulo': 'Teses de Doutoramento concluídas', 'teses': Tese.objects.filter(concluido=True, cursos__ciclo__numero=3).order_by('-ano__ano','titulo')},
+        ]}
 
     return render(request, 'teses/index.html', context)
 
 
 def extract_view(request):
 
-    #carrega_orientadores()
-    #carrega_teses()
-
-    for tese in Tese.objects.filter(cursos__ciclo__numero=1):
-        if tese.resumo:
-            tese.resumo = " ".join(tese.resumo.split())
-
-        tese.autores = tese.autores.capitalize()
-        tese.save()
-
-    grupo_alunos_tfc = Group.objects.get(name="alunos-tfc")
-    tfcs_em_curso = Tese.objects.filter(owner__groups=grupo_alunos_tfc)
-
     context = {
-        'tfcs_em_curso': Tese.objects.filter(concluido=False).filter(cursos__ciclo__numero=1).order_by('-ano__ano','titulo').distinct(),
-        'tfcs': Tese.objects.filter(concluido=True).filter(cursos__ciclo__numero=1).order_by('-ano__ano','autores').distinct(),
-        'mscs': Tese.objects.filter(cursos__ciclo__numero=2).order_by('-ano__ano','autores'),
-        'phds': Tese.objects.filter(cursos__ciclo__numero=3).order_by('-ano__ano','autores'),
-        }
+        'teses_todas': [
+            [   'Trabalhos em Andamento',
+                [
+                    {'titulo': 'Trabalhos Finais de Curso', 'teses': Tese.objects.filter(concluido=False, cursos__ciclo__numero=1).order_by('-ano__ano','titulo').distinct()},
+                    {'titulo': 'Dissertações de Mestrado', 'teses': Tese.objects.filter(concluido=False, cursos__ciclo__numero=2).order_by('-ano__ano','titulo').distinct()},
+                    {'titulo': 'Teses de Doutoramento', 'teses': Tese.objects.filter(concluido=False, cursos__ciclo__numero=3).order_by('-ano__ano','titulo').distinct()},
+                ]
+            ],
+            [
+                'Trabalhos Concluídos',
+                [ 
+                    {'titulo': 'Trabalhos Finais de Curso', 'teses': Tese.objects.filter(concluido=True, cursos__ciclo__numero=1).order_by('-ano__ano','titulo').distinct()},
+                    {'titulo': 'Dissertações de Mestrado', 'teses': Tese.objects.filter(concluido=True, cursos__ciclo__numero=2).order_by('-ano__ano','titulo')},
+                    {'titulo': 'Teses de Doutoramento', 'teses': Tese.objects.filter(concluido=True, cursos__ciclo__numero=3).order_by('-ano__ano','titulo')},
+                ]
+            ]
+        ]}
 
     return render(request, 'teses/extract.html', context)
+
+
+def extract_propostas_view(request):
+
+    context = {
+        'propostas_todas': [
+            {'titulo': 'Trabalhos Finais de Curso', 'teses': Proposta.objects.filter(atribuida=False, cursos__ciclo__numero=1).order_by('titulo').distinct()},
+            {'titulo': 'Dissertações de Mestrado', 'teses': Proposta.objects.filter(atribuida=False, cursos__ciclo__numero=2).order_by('titulo').distinct()},
+            {'titulo': 'Teses de Doutoramento a decorrer', 'teses': Proposta.objects.filter(atribuida=False, cursos__ciclo__numero=3).order_by('titulo').distinct()},
+        ]}
+
+    return render(request, 'teses/extract_propostas.html', context)
 
 
 
 def extract_a_decorrer_view(request):
 
-    for tese in Tese.objects.filter(cursos__ciclo__numero=1):
-        if tese.resumo:
-            tese.resumo = " ".join(tese.resumo.split())
-
-        tese.autores = tese.autores.capitalize()
-        tese.save()
-
-    grupo_alunos_tfc = Group.objects.get(name="alunos-tfc")
-    tfcs_em_curso = Tese.objects.filter(owner__groups=grupo_alunos_tfc)
-
     context = {
-        'tfcs_em_curso': Tese.objects.filter(concluido=False).filter(cursos__ciclo__numero=1).order_by('-ano__ano','titulo').distinct(),
+        'tfcs_em_curso': Tese.objects.filter(concluido=False, cursos__ciclo__numero=1).order_by('-ano__ano','titulo').distinct(),
+        'mscs_em_curso': Tese.objects.filter(concluido=False, cursos__ciclo__numero=2).order_by('-ano__ano','titulo').distinct(),
+        'phds_em_curso': Tese.objects.filter(concluido=False, cursos__ciclo__numero=3).order_by('-ano__ano','titulo').distinct(),
         }
 
     return render(request, 'teses/extract_a_decorrer.html', context)
 
 
-
-
-
-
 def entidades_old_view(request):
-
-    for tese in Tese.objects.filter(cursos__ciclo__numero=1):
-        if tese.resumo:
-            tese.resumo = " ".join(tese.resumo.split())
-
-
-        tese.autores = tese.autores.capitalize()
-        tese.save()
-
+    
 
     context = {
         'tfcs': Tese.objects.filter(cursos__ciclo__numero=1).order_by('-ano__ano','autores'),
@@ -173,7 +164,7 @@ def extract_defesas_view(request):
         tese.save()
 
     tfcs_agendados = Tese.objects.filter(cursos__ciclo__numero=1, ano__ano='2024').exclude(defesa_dia=None).distinct().order_by('-ano__ano','defesa_dia','defesa_hora','numero_TFC')
-    tfcs_por_agendar = Tese.objects.filter(cursos__ciclo__numero=1, ano__ano='2024').filter(defesa_dia=None).distinct()
+    tfcs_por_agendar = Tese.objects.filter(cursos__ciclo__numero=1, ano__ano='2024', defesa_dia=None).distinct()
 
     context = {
         'tfcs': list(tfcs_agendados) + list(tfcs_por_agendar),

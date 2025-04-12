@@ -11,38 +11,6 @@ class TeseEditForm(forms.ModelForm):
         fields = ['resumo', 'palavras_chave', 'areas', 'tecnologias', 'imagem', 'recil', 'relatorio', 'link_aplicacao']
 
 
-class TeseAdmin_old(admin.ModelAdmin):
-
-    list_display = ('titulo', 'numero_TFC', 'created_at', 'autores', 'ano', 'resumo_short', 'list_orientadores', 'entidade_externa', 'imagem', 'video', 'relatorio', 'defesa_dia', 'defesa_hora')
-    search_fields = ('titulo', 'autores',)
-#    list_editable = ('numero_TFC', 'defesa_dia', 'defesa_hora', 'autores', 'ano')
-    list_filter = ['ano', 'orientadores']
-
-    # Sort by 'ano' (descending) and 'numero_TFC' (ascending)
-    ordering = ['ano', 'numero_TFC']
-
-    def resumo_short(self, obj):
-        if obj.resumo:
-            return strip_tags(obj.resumo[:100])  # Truncate to 100 characters and remove HTML tags
-        return ''
-    resumo_short.short_description = 'Resumo'  # Custom column name
-
-
-    # Custom method to display Many-to-Many field 'orientadores'
-    def list_orientadores(self, obj):
-        return ", ".join([orientador.nome for orientador in obj.orientadores.all()])
-    list_orientadores.short_description = 'Orientadores'
-
-
-
-#    def change_view(self, request, object_id, form_url='', extra_context=None):
-#        if request.user.groups.filter(name='editor').exists():
-#            self.form = TeseEditForm
-
-#        return super().change_view(request, object_id, form_url, extra_context)
-
-    filter_horizontal = ('orientadores', 'cursos', 'tecnologias', 'areas', 'palavras_chave')
-
 class TeseAdminForm(forms.ModelForm):
     class Meta:
         model = Tese
@@ -56,13 +24,20 @@ class TeseAdminForm(forms.ModelForm):
 class TeseAdmin(admin.ModelAdmin):
     form = TeseAdminForm
 
-    list_display = ('titulo', 'numero_TFC', 'created_at', 'autores', 'ano', 'resumo_short', 'list_orientadores', 'entidade_externa', 'imagem', 'video', 'relatorio', 'defesa_dia', 'defesa_hora')
-    search_fields = ('titulo', 'autores',)
-    list_filter = ['ano', 'orientadores']
-    ordering = ['ano', 'numero_TFC']
+    list_display = ('titulo', 'numero_TFC', 'get_ciclo', 'created_at', 'autores', 'ano', 'resumo_short', 'list_orientadores', 'entidade_externa', 'imagem', 'video', 'relatorio', 'defesa_dia', 'defesa_hora')
+    search_fields = ('titulo', 'autores', 'orientadores', 'ano__ano', 'cursos__ciclo__numero', 'cursos__nome', 'tecnologias__nome', 'areas__nome', 'palavras_chave__nome')
+    list_filter = ['cursos__ciclo', 'ano', 'orientadores']
+    ordering = ['created_at', 'ano', 'numero_TFC']
     filter_horizontal = ('orientadores', 'cursos', 'tecnologias', 'areas', 'palavras_chave')
     exclude = ('owner', 'defesa_dia', 'defesa_hora', 'numero_TFC', 'recil', 'link_aplicacao', 'avaliacao')
 
+    def get_ciclo(self, obj):
+            # Aqui estamos a acessar o primeiro ciclo de um dos cursos associados à tese
+            if obj.cursos.exists():
+                return obj.cursos.first().ciclo.numero
+            return None
+    get_ciclo.short_description = 'Ciclo'
+        
     def resumo_short(self, obj):
         return strip_tags(obj.resumo[:100]) if obj.resumo else ''
     resumo_short.short_description = 'Resumo'
@@ -106,3 +81,10 @@ admin.site.register(Area)
 admin.site.register(PalavraChave)
 admin.site.register(Tecnologia)
 admin.site.register(Orientador)
+
+
+class PropostaAdmin(admin.ModelAdmin):
+    exclude = ('owner',) 
+    filter_horizontal = ('orientadores', 'cursos', 'tecnologias', 'areas', 'palavras_chave')
+
+admin.site.register(Proposta, PropostaAdmin)

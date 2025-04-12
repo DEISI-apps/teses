@@ -1,0 +1,18 @@
+[Unit]
+Description=teses gunicorn daemon
+Requires=teses.socket
+After=network.target
+
+[Service]
+Group=www-data
+User=arroz
+WorkingDirectory=/home/arroz/teses
+ExecStart=/home/arroz/teses/venv/bin/gunicorn \
+          --access-logfile - \
+          --workers 3 \
+          --timeout 300 \
+          --bind unix:/run/teses.sock \
+          project.wsgi:application
+
+[Install]
+WantedBy=multi-user.target

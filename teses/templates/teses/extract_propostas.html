@@ -1,0 +1,53 @@
+<p style="margin-bottom:6ch;">Apresentam-se propostas de Trabalhos Finais de Curso, Dissertações de Mestrado e Teses de Doutoramento desenvolvidas no DEISI.</p>
+
+<div class="uk-card uk-card-default" style="box-shadow:none !important; padding: 0 !important;">
+    <ul uk-accordion class="uk-accordion">
+
+        {% for t in propostas_todas %}
+
+        {% if t.teses|length %}
+        <li style="margin: -10px 0 !important; padding: 20px 0 10px !important;">
+            <a class="uk-accordion-title"><span style="font-weight:800; font-size:1.4em">{{t.teses|length}} {{ t.titulo }}</span></a>
+            <div class="uk-accordion-content" style="margin-bottom:40px;">
+                <div class="uk-card uk-card-default" style="box-shadow:none !important; padding: 0 !important;">
+                    <ul uk-accordion class="uk-accordion">
+                        {% for tese in t.teses %}
+                        <li style="margin: -10px 0 !important; padding: 20px 0 10px !important;">
+                            <a class="uk-accordion-title"><span style="display: block;font-weight:800;font-size: 1.2em;margin-bottom:-10px;color: #e6094d;">{{ tese.titulo }}</span></a>Orientador: <span style="ccolor:#e6094d; font-weight:bold;">{% for orientador in tese.orientadores.all %}{{ orientador }}{% if not forloop.last %}, {% endif %}{% endfor %}</span>{% if tese.entidade_externa != '' and tese.entidade_externa != None and tese.entidade_externa != "N/A" %}<br>Em parceria com <b>{{tese.entidade_externa}}</b> {% endif %}
+                            <span style="font-style:italic;">{% for curso in tese.cursos.all %}{{ curso }}. {% endfor %} {{ tese.ano }}</span><div class="uk-accordion-content" style="margin-bottom:40px;"><p>{% if tese.email_contacto %}Email de contacto: {{ tese.email_contacto }}{% endif %}</p>
+                                {% if tese.imagem %}
+                                <br>
+                                <img src="https://teses.deisi.ulusofona.pt{{ tese.imagem.url }}" width="100%"
+                                    loading="lazy">
+                                {% endif %}
+
+                                
+                                <p><span style="font-weight:bold">Resumo: </span>{{ tese.resumo|linebreaksbr }}</p>
+
+                                {% if tese.palavras_chave.all %}
+                                <span style="font-weight:bold">Palavras chave:</span> {% for p in tese.palavras_chave.all %}{{ p }}{% if not forloop.last %}; {% else %}.{% endif %}{% endfor %}
+                                <br>
+                                {% endif %}
+
+                                {% if tese.areas.all %}
+                                <span style="font-weight:bold">Áreas:</span> {% for area in tese.areas.all %}{{ area }}{% if not forloop.last %}; {% else %}.{% endif %}{% endfor %}
+                                <br>
+                                {% endif %}
+
+                                {% if tese.tecnologias.all %}
+                                <span style="font-weight:bold">Tecnologias usadas:</span> {% for tec in  tese.tecnologias.all %}{{ tec }}{% if not forloop.last %}; {% else %}. {% endif %}{% endfor %}
+                                <br>
+                                {% endif %}
+
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+
+                </div>
+            </div>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</div>

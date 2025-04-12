@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-2s#w_w%lkk5_uqlyn$#ub%wn_bid+9f(cte*u-a0_%rd13fg34
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['teses.pythonanywhere.com']
+ALLOWED_HOSTS = ['teses.deisi.ulusofona.pt']
+
 
 
 # Application definition
@@ -134,7 +135,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
-MEDIA_ROOT = '/home/teses/project/media'
+import os 
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # '/home/teses/project/media'
 MEDIA_URL = '/media/'
-STATIC_ROOT = '/home/teses/project/static'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'

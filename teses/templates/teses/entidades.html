@@ -17,7 +17,7 @@
     <div class="uk-accordion-content" style="margin-bottom:40px;">
 
     {% if tese.relatorio %}
-    <p><a href="https://teses.pythonanywhere.com{{ tese.relatorio.url }}" target="_blank" download>Descarregar Relatório</a></p>
+    <p><a href="https://teses.deisi.ulusofona.pt{{ tese.relatorio.url }}" target="_blank" download>Descarregar Relatório</a></p>
     {% endif %}
     <p><span style="font-weight:bold">Resumo: </span>{{ tese.resumo|linebreaksbr }}</p>
 
@@ -39,7 +39,7 @@
     <br>
     {% if tese.imagem %}
     <br>
-    <img src="https://teses.pythonanywhere.com{{ tese.imagem.url }}" width="50%">
+    <img src="https://teses.deisi.ulusofona.pt{{ tese.imagem.url }}" width="50%">
     {% endif %}
 
     <br>

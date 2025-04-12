@@ -85,7 +85,7 @@ class Tese(models.Model):
     areas =  models.ManyToManyField(Area, related_name = 'teses')
     tecnologias =  models.ManyToManyField(Tecnologia, related_name = 'teses')
 
-    relatorio = models.FileField(upload_to="teses/")
+    relatorio = models.FileField(upload_to="teses/", blank=True, null=True)
     apresentacao = models.FileField(upload_to="teses/", blank=True, null=True)
 
     imagem = models.ImageField(upload_to="teses/")
@@ -101,5 +101,57 @@ class Tese(models.Model):
     class Meta:
         ordering = ('titulo',)
 
+
+    def clean(self):
+        # Corrigir resumo (remover espaços extras e quebras de linha estranhas)
+        if self.resumo:
+            self.resumo = " ".join(self.resumo.split())
+        
+        # Corrigir autores (retirar eventuais " e " capitalizar os autores)
+        if self.autores:
+            self.autores = self.autores.replace(' e ', ', ')
+            self.autores = self.autores.capitalize()
+        
+        
+
     def __str__(self):
         return f"{self.titulo}, {self.autores}"
+
+
+
+class Proposta(models.Model):
+    owner = models.ForeignKey(User, on_delete=models.CASCADE, default=1)  # 1 = ID do superusuário, por exemplo    defesa_dia = models.DateField(default=None, blank=True, null=True)
+    atribuida = models.BooleanField(default=False, blank=True, null=True)
+    titulo = models.CharField(max_length= 200)
+    orientadores = models.ManyToManyField(Orientador, related_name = 'propostas')
+    email_contacto =  models.EmailField()
+    entidade_externa =  models.CharField(max_length= 300, blank=True, null=True)
+
+    cursos = models.ManyToManyField(Curso, related_name = 'propostas')
+    ano = models.ForeignKey(Ano, on_delete=models.CASCADE, related_name = 'propostas')
+
+    resumo = models.TextField()
+
+    palavras_chave =  models.ManyToManyField(PalavraChave, related_name = 'propostas')
+    areas =  models.ManyToManyField(Area, related_name = 'propostas')
+    tecnologias =  models.ManyToManyField(Tecnologia, related_name = 'propostas')
+
+    imagem = models.ImageField(upload_to="propostas/")
+
+    created_at = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+
+    class Meta:
+        ordering = ('titulo',)
+
+
+    def clean(self):
+        # Corrigir resumo (remover espaços extras e quebras de linha estranhas)
+        if self.resumo:
+            self.resumo = " ".join(self.resumo.split())
+        
+    @property
+    def str_orientadores(self):
+        return ', '.join([str(orientador) for orientador in self.orientadores.all()])
+
+    def __str__(self):
+        return f"{self.titulo}, {self.str_orientadores}"
