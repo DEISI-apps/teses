@@ -1,0 +1,32 @@
+# 1. Criar o arquivo .service
+sudo nano /etc/systemd/system/teses.service
+
+# 2. Criar o arquivo .socket
+sudo nano /etc/systemd/system/teses.socket
+
+# 3. Criar a configuração do Nginx
+sudo nano /etc/nginx/sites-available/teses
+
+# 4. Criar link simbólico para habilitar o Nginx
+sudo ln -s /etc/nginx/sites-available/teses /etc/nginx/sites-enabled/
+
+# 5. Reiniciar o Nginx
+sudo systemctl restart nginx
+
+# 6. Habilitar os serviços systemd
+sudo systemctl enable teses.service
+sudo systemctl enable teses.socket
+
+# 7. Iniciar o serviço e o socket
+sudo systemctl start teses.socket
+sudo systemctl start teses.service
+
+# 8. Verificar o status do serviço
+sudo systemctl status teses.service
+sudo systemctl status teses.socket
+
+# 9. Testar a configuração do Nginx
+sudo nginx -t
+
+# 10 Verificar sites habilitados
+ls /etc/nginx/sites-enabled/git
